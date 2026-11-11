@@ -1,0 +1,36 @@
+/* Antarctica research pages — accessible native content and external source maps */
+.research-page{margin:0;background:#f6ead0;color:#1b3148;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+.research-page *{box-sizing:border-box}
+.research-page a{color:#20547c}
+.research-wrap{width:min(1130px,calc(100% - 36px));margin-inline:auto}
+.research-masthead{background:#0b1d30;border-bottom:3px solid #d2a454;padding:16px 0}
+.research-masthead a{color:#f9dfad;text-decoration:none}
+.navline{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.home-link{font:700 22px Georgia,serif}.home-link small{display:block;font:11px system-ui,sans-serif;color:#e4ca9a}
+.navline nav{display:flex;flex-wrap:wrap;gap:16px;font-size:13px}
+.research-banner{background:radial-gradient(ellipse at 80% 5%,#9d8869,#183651 55%,#0b1d30);color:#ffefd4;padding:64px 0 51px}
+.research-banner h1{font:700 clamp(2.4rem,5vw,4.2rem)/1.12 Georgia,serif;max-width:890px;margin:14px 0}
+.research-banner p{max-width:910px}.mini-kicker{text-transform:uppercase;letter-spacing:.15em;font-size:12px;color:#f3d090;font-weight:800}
+.statusline{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.statusline span{border:1px solid #f0d08a8c;border-radius:40px;padding:6px 12px;font-size:12px;background:#09223c8c}
+.research-content{padding:30px 0 65px}
+.research-content section{padding:30px 0;border-bottom:1px solid #cbb18b}
+.research-content h2{font:700 clamp(1.75rem,3vw,2.5rem)/1.25 Georgia,serif}
+.research-content h3{font:700 21px/1.22 Georgia,serif}
+.research-cards,.verse-list,.map-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:24px 0}
+.research-cards article,.verse-list article,.map-card{background:#fffcf6;border:1px solid #caa56c;border-radius:8px;padding:22px;box-shadow:0 7px 18px #3b291417}
+.record-type{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#956524;font-weight:800}
+.research-page a:hover{text-decoration:none}
+.scripture-research{background:#fbf2dd;padding-inline:20px!important;border-left:4px solid #c69c56}
+.cross-links{padding:20px;background:#e9dfc7;border-radius:7px}
+.cross-links a,.research-links a{display:inline-block;margin:4px;padding:8px 12px;border:1px solid #bf9e69;background:#fff8ea;border-radius:6px;font-size:13px}
+.map-card{padding:0;overflow:hidden}
+.map-card img{width:100%;height:300px;object-fit:contain;background:#e5ebef;display:block}
+.map-card .map-card-body{padding:20px}
+.map-card .map-card-body p{font-size:14px}
+.figure-credit{font-size:11px;color:#5b5a57;display:block;padding:8px 20px 0}
+.research-button{display:inline-block;margin-top:10px;background:#14324f;color:#fff1cc!important;padding:12px 17px;border-radius:5px;text-decoration:none}
+.theory-link{background:#ebe9e0;padding:26px!important;border-left:4px solid #8a765c}
+.source-note{background:#f1e1bc;border-left:4px solid #b18840;padding:18px}
+.research-footer{background:#0b1d30;color:#e8d6af;padding:24px 0}.research-footer a{color:#f9d489}
+@media(max-width:700px){.research-cards,.verse-list,.map-cards{grid-template-columns:1fr}.research-banner{padding:44px 0}.map-card img{height:245px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
