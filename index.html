@@ -10,10 +10,18 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./design.css">
   <title>Biblical World Atlas | Research Atlas & Encyclopedia</title>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-header">
+    <div class="utility-inner"><span>✦ A Comprehensive Biblical Research Study Resource</span><div class="accessibility-tools" aria-label="Accessibility options">
+      <button type="button" id="text-size-control" aria-pressed="false" title="Toggle larger text">A<span aria-hidden="true">+</span> Text Size</button>
+      <button type="button" id="contrast-control" aria-pressed="false" title="Toggle higher contrast">◐ High Contrast</button>
+      <button type="button" id="read-aloud-control" title="Read the introduction aloud">◖)) Read Aloud</button>
+    </div></div>
+  </div>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Biblical World Atlas home"><span class="brand-sigil">✦</span><span>BIBLICAL <strong>WORLD ATLAS</strong><small>Research Atlas & Encyclopedia</small></span></a>
     <nav class="main-nav" aria-label="Main navigation">
@@ -26,7 +34,8 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-art" aria-hidden="true"><span class="halo"></span><span class="sun"></span><span class="mountain mountain-one"></span><span class="mountain mountain-two"></span><span class="ruins"></span></div>
       <div class="hero-inner">
-        <p class="eyebrow">Ancient scriptures · Historical geography · Evidence & discovery</p>
+        <div class="hero-emblem" aria-hidden="true"><span class="emblem-globe">◉</span><span class="emblem-book">❧</span></div>
+        <p class="eyebrow">Scripture · History · Geography · Genealogies · Maps · Research</p>
         <h1 id="hero-title">Biblical World <em>Atlas</em></h1>
         <p class="hero-subtitle">A Research Atlas & Encyclopedia</p>
         <p class="intro">Study Scripture, explore biblical places, follow ancient history, and discover traceable references across biblical and historical writings.</p>
@@ -40,9 +49,29 @@
           <p>Try: <button type="button" data-search="Enoch">Enoch</button> · <button type="button" data-search="Euphrates">Euphrates</button> · <button type="button" data-search="Jerusalem">Jerusalem</button> · <button type="button" data-search="Jubilees">Jubilees</button></p>
         </div>
         <blockquote class="scripture"><p>“Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.”</p><cite>2 Timothy 2:15 · King James Version</cite></blockquote>
+        <div class="verification-mini"><span class="mini-mark">✓</span><span><strong>Evidence-led research</strong> · Linked references · Clear source classifications · Unconfirmed claims labeled</span><a href="#verification">How we verify ↗</a></div>
+        <div class="hero-guide-grid" aria-label="Atlas study categories">
+           <a href="#scriptures"><span aria-hidden="true">▤</span><strong>Bible Library</strong><small>KJV · ASV · JPS · NKJV · AMP</small></a>
+           <a href="#research" data-quick-query="enoch"><span aria-hidden="true">✦</span><strong>Ancient Writings</strong><small>Enoch · Jasher · Jubilees · Giants</small></a>
+           <a href="#maps"><span aria-hidden="true">⌖</span><strong>Biblical Maps & Atlas</strong><small>Rivers · lands · journeys · kingdoms</small></a>
+           <a href="#research" data-quick-query="genealogy"><span aria-hidden="true">♙</span><strong>People & Genealogies</strong><small>Names · families · lineages</small></a>
+           <a href="#research" data-quick-query="history"><span aria-hidden="true">⌛</span><strong>Chronology & Timelines</strong><small>Patriarchs · kingdoms · eras</small></a>
+           <a href="#research"><span aria-hidden="true">✧</span><strong>Research Tools</strong><small>Concordance · lexicon · word studies</small></a>
+           <a href="#research" data-quick-query="archaeology"><span aria-hidden="true">⚱</span><strong>Places & Archaeology</strong><small>Cities · sites · discoveries</small></a>
+           <a href="#research" data-quick-query="kingdom"><span aria-hidden="true">♜</span><strong>Civilizations & Kingdoms</strong><small>Egypt · Assyria · Babylon · Persia</small></a>
+           <a href="#research" data-quick-query="prophecy"><span aria-hidden="true">✎</span><strong>Topics & Studies</strong><small>Prophecy · covenants · worship</small></a>
+           <a href="#theories"><span aria-hidden="true">?</span><strong>Theories & Unconfirmed</strong><small>Clearly separated hypotheses</small></a>
+        </div>
       </div>
     </section>
 
+    <section class="feature-showcase shell" aria-label="Featured Biblical World Atlas research areas">
+      <a href="#maps" class="feature-image-card feature-map"><span class="feature-icon" aria-hidden="true">⌖</span><strong>Explore by Map</strong><small>Biblical lands, ancient kingdoms, maps and geographical records</small><span class="feature-link">View maps ↗</span></a>
+      <a href="#scriptures" class="feature-image-card feature-bible"><span class="feature-icon" aria-hidden="true">▤</span><strong>Read & Compare Scripture</strong><small>Study translations and trace related ancient writings</small><span class="feature-link">Open library ↗</span></a>
+      <a href="#research" data-quick-query="ancient" class="feature-image-card feature-texts"><span class="feature-icon" aria-hidden="true">✧</span><strong>Discover Ancient Texts</strong><small>Ethiopian Bible, Enoch, Jubilees, Jasher and Giants</small><span class="feature-link">Explore writings ↗</span></a>
+      <a href="#research" class="feature-image-card feature-tools"><span class="feature-icon" aria-hidden="true">⌕</span><strong>Research with Sources</strong><small>Passages, lexicons, manuscripts and evidence status</small><span class="feature-link">Browse research ↗</span></a>
+      <div class="feature-verse"><span class="verse-label">TODAY IN SCRIPTURE</span><p>“In the beginning God created the heaven and the earth.”</p><strong>Genesis 1:1 (KJV)</strong></div>
+    </section>
     <section class="section shell" id="explore" aria-labelledby="explore-title">
       <div class="section-heading"><div><p class="kicker">Begin your exploration</p><h2 id="explore-title">Explore the Biblical World</h2></div><p>Choose a subject to find connected passages, geographical references and sources.</p></div>
       <div class="topic-grid">
@@ -64,6 +93,22 @@
       </div>
     </section>
 
+    <section class="section evidence-section" id="verification" aria-labelledby="verification-title">
+      <div class="shell">
+        <div class="evidence-heading">
+          <div><p class="kicker">Transparency in every study</p><h2 id="verification-title">Research Verification & Sources</h2>
+          <p>We identify where information comes from and what kind of support it has. <strong>Not every biblical interpretation or proposed ancient location is historically verified.</strong> Source labels explain the distinction rather than treating every claim as fact.</p></div>
+          <div class="source-stamp" aria-hidden="true"><span>✦</span><strong>SOURCES<br>MATTER</strong><small>CHECK · CITE · CLASSIFY</small></div>
+        </div>
+        <div class="evidence-grid">
+          <article><span class="status-icon">✓</span><h3>Documented evidence</h3><p>Geographical locations, archaeological records or historical facts supported by identifiable, checkable sources.</p></article>
+          <article><span class="status-icon">▤</span><h3>Textually attested</h3><p>A passage or manuscript demonstrably contains the referenced wording. This does not independently verify the event described.</p></article>
+          <article><span class="status-icon">⌕</span><h3>Scholarly interpretation</h3><p>Historical or religious interpretations attributed to researchers, editions, and supporting literature.</p></article>
+          <article><span class="status-icon">?</span><h3>Unconfirmed / disputed</h3><p>Proposed identifications and hypothetical ideas are explicitly labeled and kept separate from established facts.</p></article>
+        </div>
+        <div class="evidence-foot"><span>Research records should cite the relevant scripture, author or source, edition, location, date, and evidence limits when known.</span><a href="#research">Explore source-linked research ↗</a></div>
+      </div>
+    </section>
     <section class="section shell" id="scriptures" aria-labelledby="scriptures-title">
       <div class="section-heading"><div><p class="kicker">Compare and cross-reference</p><h2 id="scriptures-title">Bible & Ancient Text Library</h2></div><p>Five selected priority editions, with clear licensing distinctions.</p></div>
       <div class="version-grid">
