@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0b1c36"/><stop offset=".43" stop-color="#21476a"/><stop offset=".75" stop-color="#ac7964"/><stop offset="1" stop-color="#f6c88b"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fff5ca"/><stop offset=".22" stop-color="#f5d59d" stop-opacity=".9"/><stop offset="1" stop-color="#f1b875" stop-opacity="0"/></radialGradient>
+<linearGradient id="hills" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7d8276"/><stop offset="1" stop-color="#193047"/></linearGradient>
+<linearGradient id="sand" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#f0c991"/><stop offset=".45" stop-color="#a07752"/><stop offset="1" stop-color="#5e4b47"/></linearGradient>
+<linearGradient id="water" x1="0" y1="0" x2=".8" y2=".5"><stop stop-color="#4f8eab"/><stop offset="1" stop-color="#20435c"/></linearGradient>
+<linearGradient id="fade"><stop stop-color="#0a1b31" stop-opacity="0"/><stop offset=".3" stop-color="#0a1b31" stop-opacity=".7"/><stop offset=".55" stop-color="#0a1b31" stop-opacity=".87"/><stop offset=".75" stop-color="#0a1b31" stop-opacity=".38"/><stop offset="1" stop-color="#0a1b31" stop-opacity="0"/></linearGradient>
+<pattern id="grain" width="17" height="17" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r="1" fill="#fff" opacity=".03"/><circle cx="14" cy="12" r="1" fill="#000" opacity=".08"/></pattern>
+</defs>
+<rect width="1680" height="720" fill="url(#sky)"/>
+<circle cx="1445" cy="145" r="275" fill="url(#glow)" opacity=".9"/>
+<g fill="#fff1bf" opacity=".65"><circle cx="85" cy="68" r="1.8"/><circle cx="215" cy="105" r="2.2"/><circle cx="315" cy="41" r="1.6"/><circle cx="447" cy="132" r="1.3"/><circle cx="530" cy="58" r="1.7"/><circle cx="595" cy="153" r="1"/><circle cx="128" cy="204" r="1"/><circle cx="686" cy="65" r="1.4"/><circle cx="766" cy="110" r="1.1"/><circle cx="385" cy="187" r="1.1"/><circle cx="884" cy="61" r="1"/><circle cx="1017" cy="112" r=".8"/></g>
+<g opacity=".35" stroke="#dce8e8" stroke-width="1"><path d="M20 270L110 180L155 230L250 112L340 245L420 170L530 275" fill="none"/><path d="M1050 275L1150 200L1250 260L1360 148L1490 277L1570 194L1680 290" fill="none"/></g>
+<path d="M0 418L120 332L238 385L330 284L450 398L570 330L720 447L885 360L1040 434L1155 350L1250 402L1370 289L1532 394L1680 320V720H0Z" fill="#5c7180" opacity=".64"/>
+<path d="M0 482L88 427L208 471L348 362L480 479L595 416L730 506L860 440L1055 511L1186 413L1302 462L1448 377L1580 434L1680 395V720H0Z" fill="url(#hills)" opacity=".8"/>
+<path d="M0 562L130 460L340 524L500 455L650 547L950 492L1150 536L1300 456L1510 514L1680 430V720H0Z" fill="#45545a"/>
+<path d="M0 630C180 592 247 611 350 551C505 507 570 604 740 601C1000 567 1210 613 1400 548C1540 518 1600 566 1680 520V720H0Z" fill="#746958" opacity=".75"/>
+<!-- left pyramids and oasis -->
+<path d="M15 480L187 270L345 480Z" fill="url(#sand)" stroke="#a89070" stroke-width="3"/>
+<path d="M187 270L187 480H345Z" fill="#84694f" opacity=".85"/>
+<path d="M240 495L360 343L471 495Z" fill="#c39b74"/><path d="M360 343L360 495H471Z" fill="#7e6353"/>
+<path d="M0 515Q110 492 200 518T418 502L514 565Q320 554 190 572T0 590Z" fill="#c7b17b" opacity=".8"/>
+<path d="M0 605Q115 565 208 603T415 625Q280 638 150 666T0 653Z" fill="url(#water)" opacity=".77"/>
+<path d="M0 630Q130 590 260 633" stroke="#f9d7a0" stroke-width="5" fill="none" opacity=".43"/>
+<g fill="#304c34" opacity=".8"><path d="M65 558q-24 -42 -36 -23q-7 -36 -24 -32q22 -31 48 -6q17 -28 45 -9q-13 17 -30 34Z"/><path d="M450 570q-23 -36 -35 -16q-5 -22 -21 -23q12 -30 35 -14q20 -18 38 0q-10 12 -17 32Z"/></g>
+<g stroke="#4d3d2b" stroke-width="6"><path d="M55 572v-65"/><path d="M438 587v-56"/></g>
+<!-- ark on elevated rocky shelf -->
+<path d="M30 276L120 225L320 229L402 278L370 322L70 323Z" fill="#413d36" opacity=".85"/>
+<path d="M55 254L339 254L321 292Q180 326 83 287Z" fill="#725237" stroke="#e1b17a" stroke-width="3"/>
+<path d="M91 240L108 190L302 190L326 240Z" fill="#765b3e" stroke="#ddb37b" stroke-width="3"/>
+<path d="M108 190L151 164H274L302 190Z" fill="#bd8d5d"/>
+<g stroke="#d9b381" stroke-width="2" opacity=".6"><path d="M95 258v34M125 258v44M155 258v44M185 258v44M215 258v44M245 258v44M275 258v44M305 258v36"/></g>
+<g fill="#352c2a"><rect x="135" y="207" width="21" height="22"/><rect x="191" y="207" width="21" height="22"/><rect x="245" y="207" width="21" height="22"/></g>
+<!-- right historic skyline -->
+<path d="M1130 400V272h66v-54h46v65h37v-88h51v100h30v-55h59v70h31v-93h60v94h37v-48h52v145Z" fill="#c9a27b" stroke="#e5c09a" stroke-width="3"/>
+<g fill="#e6c39a"><rect x="1160" y="295" width="22" height="36"/><rect x="1252" y="237" width="15" height="37"/><rect x="1320" y="214" width="15" height="48"/><rect x="1400" y="264" width="17" height="37"/><rect x="1498" y="240" width="13" height="48"/></g>
+<path d="M1100 400h510v26h-510Z" fill="#d7af82"/><path d="M1100 427h510v16h-510Z" fill="#886d59"/>
+<path d="M1170 430v-69h34v69M1260 430v-65h34v65M1390 430v-69h34v69M1500 430v-65h34v65" fill="#50463e"/>
+<path d="M1125 280h460" stroke="#f6dfb7" stroke-width="6" opacity=".6"/>
+<path d="M1340 194h55v-27h-55ZM1358 167v-34h19v34Z" fill="#d7a87a"/>
+<!-- hillside crosses and tomb -->
+<path d="M1440 520Q1520 420 1680 450V720H1415Z" fill="#725747"/>
+<g fill="none" stroke="#332e2e" stroke-width="10"><path d="M1508 418v-90M1482 352h52"/><path d="M1570 422v-117M1541 332h57"/><path d="M1632 424v-82M1606 361h50"/></g>
+<path d="M1510 610Q1490 531 1562 511Q1642 489 1680 566V666H1523Z" fill="#d3ae85" stroke="#ae8560" stroke-width="9"/>
+<path d="M1563 615v-59a37 37 0 0 1 74 0v59Z" fill="#1b232a"/>
+<circle cx="1648" cy="585" r="38" fill="#ccb092" stroke="#8d7058" stroke-width="7"/>
+<path d="M1628 572q18 -11 34 0" stroke="#e6d0aa" stroke-width="4" fill="none"/>
+<!-- foreground silhouettes and gentle framing -->
+<path d="M0 694Q100 635 230 686T520 692Q730 653 870 706T1250 674Q1450 634 1680 694V720H0Z" fill="#162f36" opacity=".72"/>
+<rect width="1680" height="720" fill="url(#fade)" opacity=".68"/>
+<rect width="1680" height="720" fill="url(#grain)"/>
+</svg>
