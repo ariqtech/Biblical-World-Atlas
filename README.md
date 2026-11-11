@@ -34,3 +34,7 @@ Do not place API keys in this public repository. Check original text and map edi
 - `sw.js`: basic app-shell offline cache
 
 Initial PWA support is a foundation, not a guarantee of install prompts on every device. Future releases can add platform-specific PNG icons, downloaded content packs and desktop installers.
+
+## Illustrated homepage release
+
+The website has a new navy, gold and parchment homepage with original SVG landscape art, an easy-to-read light search bar, KJV 2 Timothy 2:15, clickable study categories, and a dedicated **Research Verification & Sources** section. Display controls offer enlarged text, high contrast and browser-supported read-aloud. Starter research entries show evidence-category labels; a cited text is not necessarily independent historical verification. The full map, Bible, cross-reference and offline text libraries are still being developed and are not yet complete.
