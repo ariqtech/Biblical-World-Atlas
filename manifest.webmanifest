@@ -1,0 +1,18 @@
+{
+  "name": "Biblical World Atlas — Research Atlas & Encyclopedia",
+  "short_name": "Biblical World Atlas",
+  "description": "An evolving free biblical and historical research atlas.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff9ee",
+  "theme_color": "#10233c",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
