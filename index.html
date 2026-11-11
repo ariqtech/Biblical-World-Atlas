@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10233c">
+  <meta name="description" content="Biblical World Atlas — a free, source-conscious biblical geography and scripture research project.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Biblical World Atlas">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Biblical World Atlas | Research Atlas & Encyclopedia</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Biblical World Atlas home"><span class="brand-sigil">✦</span><span>BIBLICAL <strong>WORLD ATLAS</strong><small>Research Atlas & Encyclopedia</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#explore">Explore</a><a href="#research">Research</a><a href="#scriptures">Bible Library</a><a href="#maps">Maps</a><a href="#notes">My Notes</a>
+      <a href="#theories">Theories & Unconfirmed Ideas</a>
+    </nav>
+    <a class="outline-btn desktop-only" href="#about">About the Atlas</a>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><span class="halo"></span><span class="sun"></span><span class="mountain mountain-one"></span><span class="mountain mountain-two"></span><span class="ruins"></span></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Ancient scriptures · Historical geography · Evidence & discovery</p>
+        <h1 id="hero-title">Biblical World <em>Atlas</em></h1>
+        <p class="hero-subtitle">A Research Atlas & Encyclopedia</p>
+        <p class="intro">Study Scripture, explore biblical places, follow ancient history, and discover traceable references across biblical and historical writings.</p>
+        <div class="search-panel">
+          <label for="site-search">SEARCH THE ATLAS</label>
+          <form id="search-form" role="search">
+            <span class="search-symbol" aria-hidden="true">⌕</span>
+            <input id="site-search" type="search" autocomplete="off" placeholder="Search a place, person, passage, book or topic…" aria-label="Search the atlas research index">
+            <button type="submit">Search Atlas</button>
+          </form>
+          <p>Try: <button type="button" data-search="Enoch">Enoch</button> · <button type="button" data-search="Euphrates">Euphrates</button> · <button type="button" data-search="Jerusalem">Jerusalem</button> · <button type="button" data-search="Jubilees">Jubilees</button></p>
+        </div>
+        <blockquote class="scripture"><p>“Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.”</p><cite>2 Timothy 2:15 · King James Version</cite></blockquote>
+      </div>
+    </section>
+
+    <section class="section shell" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="kicker">Begin your exploration</p><h2 id="explore-title">Explore the Biblical World</h2></div><p>Choose a subject to find connected passages, geographical references and sources.</p></div>
+      <div class="topic-grid">
+        <button class="topic river" data-search="river"><span class="topic-illustration" aria-hidden="true">〰</span><strong>Rivers</strong><small>Waters & ancient geography</small></button>
+        <button class="topic maps" data-search="maps"><span class="topic-illustration" aria-hidden="true">◈</span><strong>Maps</strong><small>Places, routes & kingdoms</small></button>
+        <button class="topic prophecies" data-search="prophecy"><span class="topic-illustration" aria-hidden="true">✧</span><strong>Prophecies</strong><small>Texts & historical context</small></button>
+        <button class="topic oceans" data-search="sea"><span class="topic-illustration" aria-hidden="true">≈</span><strong>Oceans</strong><small>Seas & coastlines</small></button>
+        <button class="topic trees" data-search="tree"><span class="topic-illustration" aria-hidden="true">♣</span><strong>Trees</strong><small>Plants & scriptural imagery</small></button>
+        <button class="topic giants" data-search="giants"><span class="topic-illustration" aria-hidden="true">♜</span><strong>Giants</strong><small>Nephilim & ancient traditions</small></button>
+      </div>
+    </section>
+
+    <section class="section parchment-band" id="research" aria-labelledby="research-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="kicker">Source-aware study</p><h2 id="research-title">Research Explorer</h2></div><p>Initial curated index. Full-text libraries and map datasets will be added progressively.</p></div>
+        <div class="research-toolbar"><label for="filter">Filter results</label><select id="filter"><option value="all">All research areas</option><option value="scripture">Bible & ancient writings</option><option value="geography">Geography & maps</option><option value="history">History & archaeology</option></select><button id="clear-search" class="minor-btn" type="button">Show all entries</button></div>
+        <p id="results-count" class="results-count" aria-live="polite"></p>
+        <div id="results" class="result-grid"></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="scriptures" aria-labelledby="scriptures-title">
+      <div class="section-heading"><div><p class="kicker">Compare and cross-reference</p><h2 id="scriptures-title">Bible & Ancient Text Library</h2></div><p>Five selected priority editions, with clear licensing distinctions.</p></div>
+      <div class="version-grid">
+        <article class="version-card"><span>ASV · 1901</span><h3>American Standard Version</h3><p>Historical public-domain English Bible.</p><a href="https://www.biblegateway.com/passage/?search=Genesis%201&version=ASV" target="_blank" rel="noopener noreferrer">Read ASV ↗</a></article>
+        <article class="version-card"><span>KJV</span><h3>King James Version</h3><p>Traditional English biblical text.</p><a href="https://www.biblegateway.com/passage/?search=Genesis%201&version=KJV" target="_blank" rel="noopener noreferrer">Read KJV ↗</a></article>
+        <article class="version-card"><span>JPS · 1917</span><h3>JPS Tanakh</h3><p>Historical Jewish English translation. Edition verification required for local import.</p><a href="https://www.sefaria.org/Genesis.1?lang=bi" target="_blank" rel="noopener noreferrer">Explore Hebrew Bible ↗</a></article>
+        <article class="version-card licensed"><span>NKJV · Licensed</span><h3>New King James Version</h3><p>Copyrighted; official external reading until permission is obtained.</p><a href="https://www.biblegateway.com/passage/?search=Genesis%201&version=NKJV" target="_blank" rel="noopener noreferrer">Read NKJV ↗</a></article>
+        <article class="version-card licensed"><span>AMP · Licensed</span><h3>Amplified Bible</h3><p>Copyrighted; official external reading until permission is obtained.</p><a href="https://www.biblegateway.com/passage/?search=Genesis%201&version=AMP" target="_blank" rel="noopener noreferrer">Read AMP ↗</a></article>
+      </div>
+      <div class="notice"><strong>Bidirectional references, not unsupported equivalences:</strong> Genesis ↔ Jubilees, Jude ↔ 1 Enoch, genealogies, the Ethiopian Orthodox canon, Tanakh and fragmentary writings will link by documented passage and connection type. A textual parallel does not by itself establish historical truth or canonical status.</div>
+    </section>
+
+    <section class="section dark-band" id="maps">
+      <div class="shell split"><div><p class="kicker">Biblical cartography</p><h2>Maps, Landscapes & Ancient Places</h2><p>Traditional study-Bible maps, kingdoms, rivers, cities, historical atlases, archaeology and documented geography — accompanied by citations, dates and confidence levels.</p><div class="actions"><a class="gold-btn" href="https://www.openbible.info/geo/" target="_blank" rel="noopener noreferrer">Bible Geocoding Source ↗</a><a class="outline-btn" href="https://pleiades.stoa.org/" target="_blank" rel="noopener noreferrer">Ancient Places Gazetteer ↗</a></div></div><div class="map-display" role="img" aria-label="Decorative old-map style compass illustration, not a geographical map"><div class="compass">✦<span>N</span></div><p>HISTORICAL GEOGRAPHY</p><small>Verified sources · cited locations</small></div></div>
+    </section>
+
+    <section class="section shell" id="notes"><div class="section-heading"><div><p class="kicker">Private to this device</p><h2>My Study Notes</h2></div><p>Your notes stay in this browser unless you export a backup. They do not sync automatically.</p></div><label class="note-label" for="study-note">Research notes</label><textarea id="study-note" rows="6" placeholder="Record scripture references, map observations and source citations here…"></textarea><div class="actions"><button class="gold-btn" id="save-note" type="button">Save on this device</button><button class="minor-btn" id="export-notes" type="button">Export backup</button><label class="import-label" for="import-notes">Import backup</label><input type="file" id="import-notes" accept="application/json,.json" hidden></div><p id="note-status" role="status" class="note-status"></p></section>
+
+    <section class="section theory-band" id="theories"><div class="shell"><p class="kicker">Clearly separated from established geography</p><h2>Theories & Unconfirmed Ideas</h2><p>This dedicated research area will document disputed identifications, alternative interpretations and hypothetical comparisons with visible evidence labels. The hypothetical biblical-river-over-USA comparison belongs only here, never on factual maps.</p><p class="fineprint">Theoretical content is not presented as verified biblical geography.</p></div></section>
+
+    <section class="section shell" id="about"><div class="section-heading"><div><p class="kicker">An evolving educational resource</p><h2>About this Atlas</h2></div></div><p>This free, noncommercial atlas is an early working foundation. Source records, complete public-domain texts, original-language research, maps, genealogy and offline content packages will be reviewed and expanded. Readers can study and save private notes; only the project owner publishes shared research.</p><p><strong>Research standard:</strong> distinguish scripture from commentary, manuscript evidence from conjecture, and reproducible geography from unverified proposals. Respect source and translation licenses.</p></section>
+  </main>
+  <footer><div class="shell"><strong>Biblical World Atlas</strong><p>“Study to shew thyself approved unto God…” — 2 Timothy 2:15 (KJV)</p><small>Free biblical and historical research · Initial website foundation · No accounts or donations</small></div></footer>
+  <script defer src="./app.js"></script>
+</body>
+</html>
