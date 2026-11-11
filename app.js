@@ -18,13 +18,20 @@ const ENTRIES = [
 ];
 const $ = id => document.getElementById(id);
 const escapeHTML = str => String(str).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+function evidenceForEntry(item) {
+ if (item.title.includes("Garden of Eden")) return {text:"Location unverified",css:"uncertain"};
+ if (["Jubilees","Enoch","Giants","Jashar","Ethiopian"].some(t=>item.title.includes(t))) return {text:"Textual reference or literary relationship",css:"context"};
+ if (item.type === "scripture") return {text:"Scriptural reference",css:"context"};
+ if (item.type === "geography") return {text:"Geographical study entry",css:"partial"};
+ return {text:"Historical study entry",css:"partial"};
+}
 let currentQuery = "";
 function render() {
  const filter = $("filter").value;
  const q = currentQuery.toLocaleLowerCase().trim();
  const matches = ENTRIES.filter(item => (filter==="all"||item.type===filter) && (!q||[item.title,item.summary,item.references,item.tags].join(" ").toLocaleLowerCase().includes(q)));
  $("results-count").textContent = matches.length + " curated research "+(matches.length===1?"entry":"entries")+(q?' matching “'+currentQuery+'”':"")+".";
- $("results").innerHTML = matches.length ? matches.map(item=>'<article class="result-card"><span class="type">'+escapeHTML(item.type)+'</span><h3>'+escapeHTML(item.title)+'</h3><p>'+escapeHTML(item.summary)+'</p><p class="refs">'+escapeHTML(item.references)+'</p><a href="'+escapeHTML(item.source)+'" target="_blank" rel="noopener noreferrer">Open source or passage ↗</a></article>').join("") : '<p>No matching entries yet. The index is still being expanded.</p>';
+ $("results").innerHTML = matches.length ? matches.map(item=>'<article class="result-card"><span class="type">'+escapeHTML(item.type)+'</span><h3>'+escapeHTML(item.title)+'</h3><p>'+escapeHTML(item.summary)+'</p><p class="refs">'+escapeHTML(item.references)+'</p><span class="evidence-type '+evidenceForEntry(item).css+'">'+escapeHTML(evidenceForEntry(item).text)+'</span><br><a href="'+escapeHTML(item.source)+'" target="_blank" rel="noopener noreferrer">Open source or passage ↗</a></article>').join("") : '<p>No matching entries yet. The index is still being expanded.</p>';
 }
 function searchFor(query) {
  currentQuery=String(query).trim().slice(0,120);
