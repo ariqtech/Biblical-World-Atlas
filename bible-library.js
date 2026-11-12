@@ -57,3 +57,14 @@ $("passage-chooser").addEventListener("submit",event=>{
  link.click();
 });
 renderVersions();
+const urlPassage=new URL(location.href).searchParams.get("passage");
+if(urlPassage)passage.value=urlPassage.slice(0,120);
+function updateHenryLink(){
+ const parsed=window.BWA_MHC?.parseReference(passage.value);
+ const link=$("henry-passage-link"),message=$("henry-passage-message");
+ if(!parsed){message.textContent="Enter a Bible book and chapter (example: John 3:16 or Isaiah 53).";link.hidden=true;return;}
+ message.textContent="Historical commentary on "+parsed.book+" chapter "+parsed.chapter+" (chapter-level, even if you entered a specific verse).";
+ link.href=parsed.commentaryUrl;link.textContent="Read Matthew Henry on "+parsed.book+" "+parsed.chapter+" ↗";link.hidden=false;
+}
+passage.addEventListener("input",updateHenryLink);
+updateHenryLink();
