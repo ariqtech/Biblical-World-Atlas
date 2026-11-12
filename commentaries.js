@@ -31,3 +31,23 @@ fetch("./commentary-links.json").then(r=>{if(!r.ok)throw Error("Link data unavai
  $("commentary-count").textContent="Commentary catalog unavailable.";
  $("commentary-results").innerHTML='<p class="commentary-empty">Could not load the catalog. Reload this page, or use the Matthew Henry and other reading links below.</p>';
 });
+
+const henryForm=document.getElementById("henry-reference-form"),henryInput=document.getElementById("henry-reference-input");
+function renderHenryReference(){
+ const r=window.BWA_MHC?.parseReference(henryInput.value.trim());
+ const status=document.getElementById("henry-reference-status");
+ const commentary=document.getElementById("henry-reference-commentary"),bible=document.getElementById("henry-reference-bible");
+ if(!r){
+  status.textContent="Enter a valid Bible book and chapter, for example Matthew 5 or Isaiah 53.";
+  commentary.hidden=true;bible.hidden=true;return;
+ }
+ status.textContent="Matched "+r.display+". Matthew Henry comments on the full chapter "+r.book+" "+r.chapter+".";
+ commentary.href=r.commentaryUrl;commentary.textContent="Read Matthew Henry: "+r.book+" "+r.chapter+" ↗";commentary.hidden=false;
+ bible.href=window.BWA_MHC.chapterBibleLink(r.book,r.chapter,"KJV");bible.textContent="Read "+r.book+" "+r.chapter+" (KJV) ↗";bible.hidden=false;
+}
+henryForm.addEventListener("submit",e=>{e.preventDefault();renderHenryReference();});
+henryInput.addEventListener("input",renderHenryReference);
+document.querySelectorAll("[data-henry-ref]").forEach(button=>button.addEventListener("click",()=>{henryInput.value=button.dataset.henryRef;renderHenryReference();}));
+const preset=new URL(location.href).searchParams.get("passage");
+if(preset)henryInput.value=preset.slice(0,100);
+renderHenryReference();
