@@ -1,5 +1,5 @@
-const CACHE_NAME="biblical-world-atlas-shell-v6";
-const APP_SHELL=["./","./index.html","./styles.css","./design.css","./hero-landscape.svg","./app.js","./design.js","./research-pages.css","./biblical-maps.html","./biblical-maps.css","./biblical-maps.js","./bible-library.html","./bible-library.js","./reading-library.css","./ancient-texts.html","./antarctica.html","./theories/antarctica-ice-wall.html","./manifest.webmanifest","./icon.svg"];
+const CACHE_NAME="biblical-world-atlas-shell-v7";
+const APP_SHELL=["./","./index.html","./styles.css","./design.css","./hero-landscape.svg","./app.js","./design.js","./research-pages.css","./biblical-maps.html","./biblical-maps.css","./biblical-maps.js","./bible-library.html","./bible-library.js","./reading-library.css","./ancient-texts.html","./natural-world.html","./natural-world.css","./natural-world.js","./antarctica.html","./theories/antarctica-ice-wall.html","./manifest.webmanifest","./icon.svg"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(APP_SHELL)));self.skipWaiting();});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE_NAME).map(key=>caches.delete(key)))));self.clients.claim();});
 self.addEventListener("fetch",event=>{
