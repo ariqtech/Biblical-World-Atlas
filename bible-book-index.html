@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1d30">
+<meta name="description" content="Browse all 66 books of the standard Protestant Bible, select chapters, read KJV Scripture, and open Matthew Henry's corresponding historical commentary.">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./research-pages.css"><link rel="stylesheet" href="./bible-book-index.css">
+<title>Books &amp; Chapters | Biblical World Atlas</title>
+</head>
+<body class="research-page book-index-page">
+<a class="skip" href="#book-index">Skip to Bible books</a>
+<header class="research-masthead"><div class="research-wrap navline">
+<a class="home-link" href="./">✦ Biblical World Atlas<small>Research Atlas &amp; Encyclopedia</small></a>
+<nav aria-label="Bible study navigation">
+<a href="./">Atlas Home</a><a href="./bible-library.html">Bible Translations</a><a href="./gospels.html">Gospels</a><a href="./commentaries.html">Commentaries</a><a href="./strongs.html">Strong’s Lexicon</a>
+</nav></div></header>
+<main id="main">
+<section class="research-banner books-banner"><div class="research-wrap">
+<p class="mini-kicker">Scripture reading · Chapter reference guide · Historical interpretation</p>
+<h1>Bible Books &amp; Chapters</h1>
+<p>Choose a book and chapter to open its biblical text and Matthew Henry's corresponding commentary. This is a lightweight reference index—not a repository of copied Bible or commentary text.</p>
+<div class="statusline"><span>39 Old Testament books</span><span>27 New Testament books</span><span>Chapter-by-chapter study</span><span>No book text stored</span></div>
+</div></section>
+<div class="research-wrap research-content">
+<section class="books-guide" aria-labelledby="how-title">
+<p class="mini-kicker">How the links work</p>
+<h2 id="how-title">Read Scripture, Then Compare Commentary</h2>
+<p>The Bible reading and the commentary are separate sources. The <strong>Read Bible Chapter</strong> link opens the KJV text at Bible Gateway. The <strong>Matthew Henry Commentary</strong> link opens the selected chapter on the commentary's original website. These links open in a new tab where supported; <strong>return to your Biblical World Atlas tab</strong> after reading.</p>
+<p>This 66-book index follows the <strong>standard Protestant book order</strong> used for Matthew Henry's commentary. Other Christian and Jewish canonical traditions have different book collections and arrangements; explore the <a href="./ancient-texts.html">Ancient Writings</a> and <a href="./bible-library.html">Bible Library</a> for those distinctions.</p>
+</section>
+<section id="book-index" aria-labelledby="books-title">
+<div class="book-index-title-row"><div><p class="mini-kicker">Select any of the 66 books</p><h2 id="books-title">Explore the Books of the Bible</h2></div><a href="./gospels.html">Study the Four Gospels ↗</a></div>
+<div class="book-index-controls">
+<div><label for="book-search">Find a Bible book</label><input type="search" id="book-search" placeholder="Genesis, Isaiah, Matthew, Revelation…" autocomplete="off" maxlength="100"></div>
+<div><label for="book-testament">Testament</label><select id="book-testament"><option value="all">Old &amp; New Testament</option><option value="old">Old Testament</option><option value="new">New Testament</option></select></div>
+<div><label for="book-category">Book grouping</label><select id="book-category"><option value="all">All book groupings</option><option value="law">Law / Pentateuch</option><option value="history">Historical books</option><option value="wisdom">Poetry &amp; Wisdom</option><option value="major">Major Prophets</option><option value="minor">Minor Prophets</option><option value="gospels">Four Gospels</option><option value="acts">Acts</option><option value="paul">Pauline letters</option><option value="general">Hebrews &amp; General letters</option><option value="revelation">Revelation</option></select></div>
+<button type="button" id="book-reset">Reset</button>
+</div>
+<p id="book-results-count" aria-live="polite" class="book-results-count">Loading book index…</p>
+<div id="book-list" class="book-list"></div>
+</section>
+<section class="chapter-study" id="chapter-study" aria-labelledby="chapter-title">
+<p class="mini-kicker">Direct reading links · Book and chapter</p>
+<h2 id="chapter-title">Choose a Chapter</h2>
+<p id="selected-book-status" class="selected-book-status" role="status" aria-live="polite">Select a book above to see its chapters.</p>
+<div id="chapter-grid" class="chapter-grid" aria-label="Chapters for selected book"></div>
+<div class="chapter-reader" id="chapter-reader">
+<div><p class="mini-kicker">Current selection</p><h3 id="selected-chapter-title">Genesis 1</h3><p>Bible reading and historical commentary open separately.</p></div>
+<div class="chapter-reader-links">
+<a id="read-bible-link" target="_blank" rel="noopener noreferrer" href="https://www.biblegateway.com/passage/?search=Genesis%201&amp;version=KJV">Read Bible Chapter (KJV) ↗</a>
+<a id="read-henry-link" class="chapter-outline" target="_blank" rel="noopener noreferrer" href="https://mhc.thekingsbible.com/MHC/MHC01001.HTM">Read Matthew Henry Commentary ↗</a>
+<a id="read-other-translation" class="chapter-outline" href="./bible-library.html?passage=Genesis%201">Choose Another Translation ↗</a>
+</div>
+</div>
+</section>
+<section class="book-index-sources" aria-labelledby="source-title"><p class="mini-kicker">Source transparency</p><h2 id="source-title">Reference &amp; Usage Notes</h2>
+<p><strong>Scripture:</strong> King James Version (KJV) passages are read through <a href="https://www.biblegateway.com/" target="_blank" rel="noopener noreferrer">Bible Gateway</a>. Other translations are available through the <a href="./bible-library.html">Bible Translation Library</a>.</p>
+<p><strong>Commentary:</strong> Matthew Henry's <em>Commentary on the Whole Bible</em> is a historical Christian interpretation. Chapter links use the <a href="https://mhc.thekingsbible.com/" target="_blank" rel="noopener noreferrer">original reading site's</a> book and chapter structure. A commentary is not Scripture and should not be treated as independent historical proof. Availability of individual chapters depends on the source site.</p>
+<p><strong>Storage and access:</strong> Only book names, chapter counts, and generated external links are used here. No bulk copyrighted commentary content or external full-text Bible copies are downloaded or saved to the Atlas repository. External readers need an internet connection. You can generally copy selectable text, but external sites may set their own access or copying restrictions.</p>
+<div class="books-back-links"><a href="./">← Return to Biblical World Atlas</a><a href="./commentaries.html">Browse Modern &amp; Historical Commentaries ↗</a><a href="./gospels.html">Explore the Gospels ↗</a></div>
+</section>
+</div></main>
+<footer class="research-footer"><div class="research-wrap"><a href="./">← Return to Biblical World Atlas</a><p>Verified Sources · Historical References · Research Evidence &amp; Unresolved Questions</p></div></footer>
+<script defer src="./matthew-henry.js"></script><script defer src="./bible-book-index.js"></script>
+</body></html>
