@@ -1,0 +1,142 @@
+{
+  "title": "Biblical World Atlas — External Research Source Directory",
+  "schema_version": 1,
+  "note": "Links identify resources; a listed resource is not a packaged file in this repository. Rights and direct download conditions depend on the source.",
+  "sources": [
+    {
+      "type": "Historical maps",
+      "name": "Waldseemüller World Map (1507)",
+      "resource": "Original digitized map and image downloads",
+      "institution": "Library of Congress",
+      "url": "https://www.loc.gov/item/2003626426/",
+      "note": "Twelve-sheet world map; original date 1507. The archive provides viewing and download options.",
+      "files": "Images at source; no images hosted by atlas"
+    },
+    {
+      "type": "Historical maps",
+      "name": "Urbano Monte Planisphere (1587)",
+      "resource": "High-resolution historical map viewer and research article",
+      "institution": "David Rumsey Map Collection",
+      "url": "https://www.davidrumsey.com/blog/2017/11/26/largest-early-world-map-monte-s-10-ft-planisphere-of-1587",
+      "note": "Digital assemblage of the 60-sheet 1587 manuscript; original view and specialized derivative downloads.",
+      "files": "Large map imagery and related files at source"
+    },
+    {
+      "type": "Historical maps",
+      "name": "Fra Mauro World Map (c. 1450)",
+      "resource": "Original manuscript catalog and historical map resources",
+      "institution": "Biblioteca Nazionale Marciana",
+      "url": "https://bibliotecanazionalemarciana.cultura.gov.it/en/book-and-archival-heritage/book-and-archival-heritage/fra-mauros-world-map/",
+      "note": "Venetian manuscript map. Institution documents provenance and related digital access.",
+      "files": "Original manuscript access at source"
+    },
+    {
+      "type": "Historical maps",
+      "name": "Library of Congress Geography and Map Division",
+      "resource": "Map database, individual scans and item-level downloads",
+      "institution": "Library of Congress",
+      "url": "https://www.loc.gov/maps/",
+      "note": "Historical world, regional, and thematic map collection; download options and rights vary by item.",
+      "files": "Individual digital files at source"
+    },
+    {
+      "type": "Historical maps",
+      "name": "David Rumsey Historical Map Collection",
+      "resource": "Historical cartography viewer and catalog",
+      "institution": "David Rumsey Map Collection",
+      "url": "https://www.davidrumsey.com/",
+      "note": "Maps from multiple centuries with detailed catalog records and high-resolution viewers.",
+      "files": "Source-hosted maps and downloads where allowed"
+    },
+    {
+      "type": "Antarctica",
+      "name": "Antarctica Overview Map",
+      "resource": "Modern polar map with downloadable cartography",
+      "institution": "British Antarctic Survey",
+      "url": "https://data.bas.ac.uk/items/fc491140-1dd6-4e3f-a581-71a1592bd36c/",
+      "note": "Prepared 2022, published 2025; WGS84 Antarctic polar stereographic projection, source and licensing notes included.",
+      "files": "Original map downloads at source; OGL 3.0 attribution applies"
+    },
+    {
+      "type": "Antarctica",
+      "name": "Landsat Image Mosaic of Antarctica (LIMA)",
+      "resource": "Interactive satellite mosaic viewer",
+      "institution": "USGS / NASA collaboration",
+      "url": "https://lima.usgs.gov/view_lima.php",
+      "note": "Satellite-derived composite with multiple views, projection information, and coverage notes.",
+      "files": "Viewer; larger image products accessed separately"
+    },
+    {
+      "type": "Antarctica",
+      "name": "LIMA Satellite Image Downloads",
+      "resource": "GeoTIFF satellite image data and download metadata",
+      "institution": "USGS / NASA collaboration",
+      "url": "https://lima.usgs.gov/access.php",
+      "note": "Source offers geographic data files and metadata; full-resolution downloads may be large.",
+      "files": "Satellite data downloads at source"
+    },
+    {
+      "type": "Scripture",
+      "name": "Bible Translation Library",
+      "resource": "Translation finder and Bible passage source links",
+      "institution": "Biblical World Atlas",
+      "url": "./bible-library.html",
+      "note": "Choose from linked Bible versions. Modern copyrighted translations open at authorized reading sites.",
+      "files": "Online reading links; full-text copies not included in atlas"
+    },
+    {
+      "type": "Ancient writings",
+      "name": "Ancient Writings and Ethiopian Canon",
+      "resource": "Historical text readers and canonical references",
+      "institution": "Biblical World Atlas",
+      "url": "./ancient-texts.html",
+      "note": "1, 2, 3 Enoch reading sources, Jubilees, Jasher, manuscript resources, Ethiopian canon references.",
+      "files": "Text reading hosted by original sources"
+    },
+    {
+      "type": "Biblical maps",
+      "name": "Historical Study-Bible Map Library",
+      "resource": "Historical map catalog and Scripture cross-references",
+      "institution": "Biblical World Atlas",
+      "url": "./biblical-maps.html",
+      "note": "1888 historical map plates with source attribution and passage links.",
+      "files": "Original image files hosted by source institution"
+    },
+    {
+      "type": "Botany",
+      "name": "Plants of the World Online",
+      "resource": "Botanical species names and taxonomy",
+      "institution": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/",
+      "note": "Modern taxonomy can help investigate possible ancient plant identifications; not proof of biblical species.",
+      "files": "Online scientific database"
+    },
+    {
+      "type": "Geology",
+      "name": "What Is Soil?",
+      "resource": "Technical soil science guide",
+      "institution": "USDA Natural Resources Conservation Service",
+      "url": "https://www.nrcs.usda.gov/resources/education-and-teaching-materials/what-is-soil",
+      "note": "Information about soil materials and formation, not proof of an ancient term's meaning.",
+      "files": "Online resource and links"
+    },
+    {
+      "type": "Geology",
+      "name": "USGS Gemstone Terminology",
+      "resource": "Gemology and mineral terminology reference",
+      "institution": "U.S. Geological Survey",
+      "url": "https://pubs.usgs.gov/gip/gemstones/terms.html",
+      "note": "Modern gemstone classification for comparing historical names, with uncertainty recognized.",
+      "files": "Online reference guide"
+    },
+    {
+      "type": "Nature research",
+      "name": "Biblical Nature, Foods and Earth Materials",
+      "resource": "Scripture-linked research index with citations",
+      "institution": "Biblical World Atlas",
+      "url": "./natural-world.html",
+      "note": "Fruits, vegetables, herbs, clay, soil, rocks, metals and gemstones with evidence labels.",
+      "files": "Lightweight on-site research index"
+    }
+  ]
+}
