@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1d30"><meta name="description" content="Explore Strong's Exhaustive Concordance: Hebrew and Greek Bible dictionary lookups, meanings, original-language forms, and KJV verse occurrences.">
+<link rel="icon" href="./icon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./research-pages.css"><link rel="stylesheet" href="./strongs.css">
+<title>Strong’s Concordance & Lexicon | Biblical World Atlas</title></head>
+<body class="research-page strongs-page"><a class="skip" href="#content">Skip to Strong's lookup</a>
+<header class="research-masthead"><div class="research-wrap navline">
+<a class="home-link" href="./">✦ Biblical World Atlas<small>Research Atlas & Encyclopedia</small></a>
+<nav aria-label="Bible study tools"><a href="./">Home</a><a href="./bible-library.html">Bible Translations</a><a href="./ancient-texts.html">Ancient Writings</a><a href="./research-source-directory.html">Sources</a></nav>
+</div></header>
+<main id="content">
+<section class="research-banner strongs-banner"><div class="research-wrap"><p class="mini-kicker">Biblical word studies · Strong’s numbers · KJV concordance</p>
+<h1>Strong’s Concordance & Lexicon</h1>
+<p>Look up Hebrew and Greek dictionary entries by Strong’s number, examine original-language spellings and meanings, and browse the King James Bible passages indexed to each word.</p>
+<div class="statusline"><span>Hebrew H1–H8674</span><span>Greek G1–G5624</span><span>All indexed KJV occurrences</span><span>Source-aware study</span></div>
+</div></section>
+<div class="research-wrap research-content">
+<section id="strongs-tool" aria-labelledby="strongs-heading">
+<p class="mini-kicker">Interactive dictionary and concordance</p><h2 id="strongs-heading">Find a Hebrew or Greek Word</h2>
+<p>Enter a Strong’s identifier such as <strong>G26</strong> or <strong>H430</strong>. Select a Bible passage below to study the individual words and open their dictionary entries. Definitions are displayed here within the atlas—not in a pop-up from another site.</p>
+<form id="strongs-form" class="strongs-form">
+<div><label for="strongs-code">Strong’s number</label><input id="strongs-code" type="text" value="G26" placeholder="G26 or H430" pattern="[GgHh][0-9]{1,5}" maxlength="6" autocomplete="off" required></div>
+<button type="submit" class="strongs-main-btn">Look up word & all occurrences</button>
+</form>
+<div class="strongs-examples"><span>Try a word:</span><button type="button" data-strongs="G26">G26 · agápē</button><button type="button" data-strongs="G3056">G3056 · lógos</button><button type="button" data-strongs="H430">H430 · elohim</button><button type="button" data-strongs="H7225">H7225 · beginning</button></div>
+<p id="strongs-status" class="strongs-status" role="status" aria-live="polite">Choose a Strong’s number to begin.</p>
+<div id="strongs-entry" class="strongs-entry"></div>
+<div id="strongs-occurrences" class="strongs-occurrences"></div>
+</section>
+<section id="verse-word-study" aria-labelledby="verse-heading">
+<p class="mini-kicker">Explore a passage word by word</p><h2 id="verse-heading">Study the Words in a Bible Verse</h2>
+<form id="verse-form" class="strongs-form">
+<div><label for="verse-reference">Book chapter:verse (KJV)</label><input id="verse-reference" type="text" value="John 3:16" placeholder="Genesis 1:1 or John 3:16" required maxlength="80"></div>
+<button type="submit" class="strongs-main-btn">Show original-language word links</button>
+</form>
+<p id="verse-status" class="strongs-status" role="status" aria-live="polite">Click any Strong’s number to open its full dictionary entry above.</p>
+<div id="verse-words" class="verse-words"></div>
+</section>
+<section class="strongs-sources" aria-labelledby="strongs-sources-heading">
+<p class="mini-kicker">Dictionary provenance & study standards</p><h2 id="strongs-sources-heading">Source and Interpretation Notes</h2>
+<p><strong>Historical source:</strong> James Strong’s <em>Exhaustive Concordance</em> (1890), a historical public-domain reference. Its entries are not a substitute for contextual translation, Hebrew/Greek grammar or modern linguistic scholarship.</p>
+<p><strong>Digital delivery:</strong> this atlas uses BibleEngine’s publicly accessible, CORS-enabled static KJV, Strong’s lexicon and verse index files, fetched by your browser only when needed. No paid service, account or API key is required. Internet access is necessary for this remote dictionary data; full offline word-data packets remain a separate future option.</p>
+<p><strong>Important:</strong> a Strong’s number groups lexical forms for study, but a word can have different senses depending on its context. KJV tagging reflects a historical English translation and may differ from another Bible edition or critical Greek/Hebrew text. Occurrence counts are the source's indexed KJV results.</p>
+<div class="cross-links">
+<a href="https://bibleengine.org/advanced" target="_blank" rel="noopener noreferrer">BibleEngine data specification & credits ↗</a>
+<a href="https://github.com/openscriptures/strongs" target="_blank" rel="noopener noreferrer">OpenScriptures Strong’s dictionaries ↗</a>
+<a href="./bible-library.html">Compare Bible translations ↗</a>
+<a href="./ancient-texts.html">Ancient writings ↗</a>
+</div>
+</section>
+</div></main>
+<footer class="research-footer"><div class="research-wrap"><a href="./">← Return to Biblical World Atlas</a><p>Verified Sources · Historical References · Research Evidence &amp; Unresolved Questions</p></div></footer>
+<script defer src="./strongs.js"></script>
+</body></html>
