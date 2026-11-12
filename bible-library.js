@@ -8,7 +8,7 @@ const VERSIONS = [
  {code:"AMPC",name:"Amplified Bible, Classic Edition",classification:"Modern English · Publisher-hosted",detail:"Authorized online reading; text is not reproduced here.",example:"Romans 8"},
  {code:"JUB",name:"Jubilee Bible 2000",classification:"Jubilee Bible · Publisher edition",detail:"Jubilee Bible 2000 (Russell M. Stendal); source of the atlas homepage verse.",example:"2 Timothy 2:15"},
  {code:"WEB",name:"World English Bible",classification:"Modern English · Public domain",detail:"Modern English translation freely available to read.",example:"Genesis 1"},
- {code:"BSB",name:"Berean Standard Bible",classification:"Modern English · Public domain",detail:"Modern-English public-domain translation.",example:"Genesis 1"},
+ {code:"BSB",name:"Berean Standard Bible",classification:"Modern English · Public domain",detail:"Modern-English public-domain translation; browse the publisher’s reading site.",example:"Genesis 1",homepage:"https://berean.bible/"},
  {code:"YLT",name:"Young's Literal Translation",classification:"Historical literal English",detail:"An older literal English Bible translation.",example:"Genesis 1"},
  {code:"DARBY",name:"Darby Bible Translation",classification:"Historical English",detail:"An older literal-oriented English edition.",example:"Genesis 1"},
  {code:"NIV",name:"New International Version",classification:"Modern English · Publisher-hosted",detail:"Authorized online reading; full text is not reproduced here.",example:"Genesis 1"},
@@ -43,12 +43,17 @@ $("passage-chooser").addEventListener("submit",event=>{
  const text=passage.value.trim();
  if(!text){feedback.textContent="Enter a book or passage.";passage.focus();return;}
  if(v.code==="JPS1917"){
-  feedback.textContent="JPS 1917 contains the Hebrew Bible (Tanakh), not the New Testament. The original edition's complete book index will open; select your book and chapter there.";
+  feedback.textContent="JPS 1917 contains the Hebrew Bible (Tanakh), not the New Testament. Open its complete book index and select a chapter there.";
+ }else if(v.homepage){
+  feedback.textContent="Opening the publisher’s reading library for "+v.name+". Choose the passage there.";
  }else{
-  feedback.textContent="Opening "+v.name+" — "+text+" in its authorized reader.";
+  feedback.textContent="Opening "+v.name+" — "+text+" in an authorized reader.";
  }
  const href=getURL(v,text);
- const tab=window.open(href,"_blank","noopener,noreferrer");
- if(!tab){feedback.textContent+=" If a new tab did not open, use the link below.";const a=document.createElement("a");a.href=href;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Open passage in "+v.code+" ↗";feedback.append(" ",a);}
+ const link=document.createElement("a");
+ link.href=href;link.target="_blank";link.rel="noopener noreferrer";
+ link.textContent="Open "+v.name+" ↗";
+ feedback.append(" ",link);
+ link.click();
 });
 renderVersions();
