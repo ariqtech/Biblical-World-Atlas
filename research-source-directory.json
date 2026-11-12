@@ -137,6 +137,15 @@
       "url": "./natural-world.html",
       "note": "Fruits, vegetables, herbs, clay, soil, rocks, metals and gemstones with evidence labels.",
       "files": "Lightweight on-site research index"
+    },
+    {
+      "type": "Concordance & lexicon",
+      "name": "Strong’s Hebrew & Greek Concordance",
+      "resource": "Full-number dictionary lookups, original-language word study and paginated KJV verse indexes",
+      "institution": "Biblical World Atlas / BibleEngine public-domain data",
+      "url": "./strongs.html",
+      "note": "Embeds the original Strong’s dictionary and KJV concordance lookup directly within the atlas. Index and word data are fetched from BibleEngine's open public files when needed.",
+      "files": "Lightweight viewer on this website; full lexicon and concordance index remain hosted by the data provider"
     }
   ]
 }
