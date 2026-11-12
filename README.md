@@ -1,41 +1,11 @@
 # Biblical World Atlas
 
-**Research Atlas & Encyclopedia** — a free, noncommercial, English-language educational website and installable progressive web app (PWA).
+**Biblical World Atlas** is a free study and research resource for exploring Scripture, ancient writings, biblical history, and world geography.
 
-## Initial live foundation
+Explore biblical and historical maps, follow journeys and places mentioned in Scripture, compare Bible translations, and investigate people, cultures, natural materials, and ancient records. The atlas brings together references from biblical texts, manuscripts, historical archives, and geographical research.
 
-- Responsive navy-and-gold homepage, with readable light search field and KJV 2 Timothy 2:15
-- Searchable **small curated starter index**, not yet a complete encyclopedia or scripture search
-- Five priority scripture editions: ASV, KJV, JPS Tanakh 1917, NKJV and Amplified Bible
-- Authorized external reading links for copyrighted NKJV/AMP
-- Starter map and historical geography links
-- Private single-note browser storage with JSON export/import
-- Web app manifest and basic offline caching of the site interface
+Research entries include source links where available. Information is identified according to its supporting evidence, such as documented Scripture passages, historical or geographical records, scholarly interpretations, or **unconfirmed and disputed claims**. These labels help readers understand what a source establishes and what remains uncertain.
 
-## Research and publishing commitments
+The atlas can be accessed in modern web browsers on **Windows, Mac, iPhone, iPad, and Android**. Supported devices can also use its installable web-app features.
 
-The project will progressively add source-verified references, bidirectional scripture-to-ancient-text relationships, geography and historical atlases. Theories and unverified ideas are isolated from documented historical facts. The only planned hypothetical geographical overlay is the biblical river comparison to the United States, housed exclusively in that separate section.
-
-No AI assistant, public edits, accounts, paywalls or donations are part of this project. Readers can create private notes locally; only maintainers publish shared research. The full content library, maps, multilingual source texts and offline packs **have not yet been imported**.
-
-## Hosting
-
-This is a no-build static website suitable for GitHub Pages. In repository **Settings → Pages**, choose **Deploy from a branch**, `main`, `/(root)`, and Save. Expected site address: https://ariqtech.github.io/Biblical-World-Atlas/
-
-Do not place API keys in this public repository. Check original text and map edition licenses before embedding and distributing downloads. Browser notes are stored locally and can be lost if site storage is cleared: export backups regularly.
-
-## Files
-
-- `index.html`: accessible homepage and content sections
-- `styles.css`: responsive theme
-- `app.js`: research index, search/filter and local notes
-- `manifest.webmanifest`: install metadata
-- `icon.svg`: project icon
-- `sw.js`: basic app-shell offline cache
-
-Initial PWA support is a foundation, not a guarantee of install prompts on every device. Future releases can add platform-specific PNG icons, downloaded content packs and desktop installers.
-
-## Illustrated homepage release
-
-The website has a new navy, gold and parchment homepage with original SVG landscape art, an easy-to-read light search bar, KJV 2 Timothy 2:15, clickable study categories, and a dedicated **Research Verification & Sources** section. Display controls offer enlarged text, high contrast and browser-supported read-aloud. Starter research entries show evidence-category labels; a cited text is not necessarily independent historical verification. The full map, Bible, cross-reference and offline text libraries are still being developed and are not yet complete.
-\n## Historical Bible maps pilot\n\nThe atlas includes a searchable eight-plate American Bible Society (1888) historic Bible map collection at `biblical-maps.html`, with original host links, source attribution, publication date and related Bible passages. The map images are served by GodWeb and require an internet connection; the page interface may be cached offline. The original publisher-era interpretations of routes and borders are not asserted as verified modern cartography. Two Library of Congress maps (1760 and 1881) and open research gazetteer resources are included as source links. A full modern interactive biblical GIS library and individual page-level bidirectional scripture reader links remain future work.\n
+**Explore the atlas:** https://ariqtech.github.io/Biblical-World-Atlas/
