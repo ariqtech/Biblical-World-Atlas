@@ -156,6 +156,7 @@ function showLexiconChoices(matches){
 }
 async function searchConcordance(input){
  const raw=String(input).trim();
+ $("strongs-code").value=raw;
  if(standardCode(raw)||/^[hg]\s*\d/i.test(raw)){
   await lookup(raw.replace(/^([hg])\s+/i,"$1"));
   return;
