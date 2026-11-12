@@ -68,3 +68,35 @@ function updateHenryLink(){
 }
 passage.addEventListener("input",updateHenryLink);
 updateHenryLink();
+
+function getPassageRange(reference) {
+ const match=reference.trim().match(/^(?<book>.+?)\s+(?<chapter>\d{1,3})(?::(?<verse>\d{1,3}))?(?:\s*[-–—]\s*(?<end>\d{1,3})(?::(?<endVerse>\d{1,3}))?)?$/);
+ if(!match)return null;
+ const {book:bookName,chapter,verse,end,endVerse}=match.groups;
+ const book=window.BWA_MHC.getBook(bookName);
+ const first=Number(chapter);
+ // A bare number after a verse (Genesis 11:27–32) is an ending verse.
+ const last=end&&(!verse||endVerse)?Number(end):first;
+ if(!book||first<1||last<first||last>book.chapters)return null;
+ return {book:book.name,first,last};
+}
+
+function updatePassageMaps() {
+ const ranges=passage.value.split(";").map(getPassageRange).filter(Boolean);
+ const maps=HISTORICAL_MAPS.filter(map=>map.chapters.some(([book,first,last=first])=>
+  ranges.some(range=>range.book===book&&range.first<=last&&range.last>=first)
+ ));
+ const links=maps.map(map=>{
+  const item=document.createElement("li");
+  const link=document.createElement("a");
+  link.href="./biblical-maps.html#map-"+map.id;
+  link.textContent=map.title;
+  item.append(link);
+  return item;
+ });
+ $("passage-map-links").replaceChildren(...links);
+ $("passage-maps").hidden=links.length===0;
+}
+
+passage.addEventListener("input",updatePassageMaps);
+updatePassageMaps();
