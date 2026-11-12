@@ -45,7 +45,11 @@
 <p id="selected-book-status" class="selected-book-status" role="status" aria-live="polite">Select a book above to see its chapters.</p>
 <div id="chapter-grid" class="chapter-grid" aria-label="Chapters for selected book"></div>
 <div class="chapter-reader" id="chapter-reader">
-<div><p class="mini-kicker">Current selection</p><h3 id="selected-chapter-title">Genesis 1</h3><p>Bible reading and historical commentary open separately.</p></div>
+<div><p class="mini-kicker">Current selection</p><h3 id="selected-chapter-title">Genesis 1</h3><p>Bible reading and historical commentary open separately.</p>
+<div class="chapter-version-field"><label for="chapter-version">Choose Bible translation</label>
+<select id="chapter-version" aria-describedby="chapter-version-note"><option value="KJV">King James Version (KJV)</option></select>
+<p id="chapter-version-note" role="status" aria-live="polite">Choose a translation before opening your Bible reading.</p>
+</div></div>
 <div class="chapter-reader-links">
 <a id="read-bible-link" target="_blank" rel="noopener noreferrer" href="https://www.biblegateway.com/passage/?search=Genesis%201&amp;version=KJV">Read Bible Chapter (KJV) ↗</a>
 <a id="read-henry-link" class="chapter-outline" target="_blank" rel="noopener noreferrer" href="https://mhc.thekingsbible.com/MHC/MHC01001.HTM">Read Matthew Henry Commentary ↗</a>
@@ -54,7 +58,7 @@
 </div>
 </section>
 <section class="book-index-sources" aria-labelledby="source-title"><p class="mini-kicker">Source transparency</p><h2 id="source-title">Reference &amp; Usage Notes</h2>
-<p><strong>Scripture:</strong> King James Version (KJV) passages are read through <a href="https://www.biblegateway.com/" target="_blank" rel="noopener noreferrer">Bible Gateway</a>. Other translations are available through the <a href="./bible-library.html">Bible Translation Library</a>.</p>
+<p><strong>Scripture:</strong> Choose among 15 Bible translations, including KJV, NKJV, JUB, AMP, NIV, ESV, NLT, ASV and WEB. Most selections open the specific chapter at <a href="https://www.biblegateway.com/" target="_blank" rel="noopener noreferrer">Bible Gateway</a>. For JPS Tanakh (1917) and the Berean Standard Bible, the linked original reading library opens, and you select your chapter there. JPS Tanakh is limited to Old Testament books. The <a href="./bible-library.html">Bible Translation Library</a> describes every edition.</p>
 <p><strong>Commentary:</strong> Matthew Henry's <em>Commentary on the Whole Bible</em> is a historical Christian interpretation. Chapter links use the <a href="https://mhc.thekingsbible.com/" target="_blank" rel="noopener noreferrer">original reading site's</a> book and chapter structure. A commentary is not Scripture and should not be treated as independent historical proof. Availability of individual chapters depends on the source site.</p>
 <p><strong>Storage and access:</strong> Only book names, chapter counts, and generated external links are used here. No bulk copyrighted commentary content or external full-text Bible copies are downloaded or saved to the Atlas repository. External readers need an internet connection. You can generally copy selectable text, but external sites may set their own access or copying restrictions.</p>
 <div class="books-back-links"><a href="./">← Return to Biblical World Atlas</a><a href="./commentaries.html">Browse Modern &amp; Historical Commentaries ↗</a><a href="./gospels.html">Explore the Gospels ↗</a></div>
