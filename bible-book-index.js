@@ -15,6 +15,35 @@
   {key:"revelation",title:"Revelation",first:66,last:66,testament:"new"}
  ];
  let active=lib.getBook("Genesis"),chapter=1;
+ const TRANSLATIONS=[["KJV","King James Version (KJV)"],["NKJV","New King James Version (NKJV)"],["JUB","Jubilee Bible 2000 (JUB)"],["AMP","Amplified Bible (AMP)"],["AMPC","Amplified Bible Classic (AMPC)"],["NIV","New International Version (NIV)"],["ESV","English Standard Version (ESV)"],["NLT","New Living Translation (NLT)"],["ASV","American Standard Version (ASV)"],["WEB","World English Bible (WEB)"],["BSB","Berean Standard Bible (BSB)"],["JPS1917","JPS Tanakh 1917 (Old Testament only)"],["YLT","Young's Literal Translation (YLT)"],["DARBY","Darby Bible Translation (DARBY)"],["MSG","The Message (MSG)"]];
+ const versionSelect=$("chapter-version");
+ const translationNote=$("chapter-version-note");
+ versionSelect.innerHTML=TRANSLATIONS.map(([code,label])=>'<option value="'+code+'">'+label+'</option>').join("");
+ function renderTranslation(){
+  const jpsOption=versionSelect.querySelector('option[value="JPS1917"]');
+  const oldTestament=active.bookNumber<=39;
+  if(jpsOption)jpsOption.disabled=!oldTestament;
+  const prior=versionSelect.value;
+  if(prior==="JPS1917"&&!oldTestament)versionSelect.value="KJV";
+  const code=versionSelect.value;
+  const reading=$("read-bible-link");
+  if(code==="JPS1917"){
+   reading.href="https://new.mechon-mamre.org/e/et/et0.htm";
+   reading.textContent="Open JPS 1917 Book Index ↗";
+   translationNote.textContent="JPS Tanakh 1917 contains the Hebrew Bible. Choose the chapter on the original source site.";
+  }else if(code==="BSB"){
+   reading.href="https://berean.bible/";
+   reading.textContent="Open Berean Standard Bible Reader ↗";
+   translationNote.textContent="Choose the chapter at the original Berean Standard Bible reading site.";
+  }else{
+   reading.href=lib.chapterBibleLink(active.name,chapter,code);
+   reading.textContent="Read "+active.name+" "+chapter+" ("+code+") ↗";
+   translationNote.textContent=prior==="JPS1917"&&!oldTestament
+    ?"JPS Tanakh does not contain the New Testament. KJV was selected for this book."
+    :"The selected translation opens the chapter on Bible Gateway. You can return to the Atlas tab afterward.";
+  }
+ }
+ versionSelect.addEventListener("change",renderTranslation);
  const search=$("book-search"),testament=$("book-testament"),category=$("book-category"),list=$("book-list");
  function itemMatches(item,group){
   return (testament.value==="all"||testament.value===group.testament) &&
@@ -40,7 +69,7 @@
    return '<button type="button" class="chapter-button" data-chapter="'+n+'" aria-label="'+active.name+' chapter '+n+'" aria-pressed="'+(chapter===n?'true':'false')+'">'+n+'</button>';
   }).join("");
   $("selected-chapter-title").textContent=active.name+" "+chapter;
-  $("read-bible-link").href=lib.chapterBibleLink(active.name,chapter,"KJV");
+  renderTranslation();
   $("read-henry-link").href=lib.chapterLink(active.name,chapter);
   $("read-other-translation").href="./bible-library.html?passage="+encodeURIComponent(active.name+" "+chapter);
  }
@@ -67,5 +96,7 @@
  const bookName=requested?.book||params.get("book")||"Genesis";
  const record=lib.getBook(bookName)||lib.getBook("Genesis");
  active=record;chapter=requested?.chapter||Math.min(record.chapters,Math.max(1,Number(params.get("chapter"))||1));
+ const initialVersion=params.get("version");
+ if(initialVersion&&TRANSLATIONS.some(t=>t[0]===initialVersion))versionSelect.value=initialVersion;
  displayBooks();displayChapters();
 })();
