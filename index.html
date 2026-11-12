@@ -11,6 +11,7 @@
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./design.css">
+  <link rel="stylesheet" href="./atlas-homepage.css">
   <title>Biblical World Atlas | Research Atlas & Encyclopedia</title>
 </head>
 <body>
@@ -20,53 +21,57 @@
       <button type="button" id="text-size-control" aria-pressed="false" title="Toggle larger text">A<span aria-hidden="true">+</span> Text Size</button>
       <button type="button" id="contrast-control" aria-pressed="false" title="Toggle higher contrast">◐ High Contrast</button>
       <button type="button" id="read-aloud-control" title="Read the introduction aloud">◖)) Read Aloud</button>
+      <a href="#about" class="atlas-help">ⓘ Help</a>
     </div></div>
   </div>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Biblical World Atlas home"><span class="brand-sigil">✦</span><span>BIBLICAL <strong>WORLD ATLAS</strong><small>Research Atlas & Encyclopedia</small></span></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#explore">Explore</a><a href="#research">Research</a><a href="./bible-library.html">Bible Library</a><a href="./gospels.html">Gospels</a><a href="./commentaries.html">Commentaries</a><a href="./ancient-texts.html">Ancient Writings</a><a href="#maps">Maps</a><a href="#notes">My Notes</a>
-      <a href="#theories">Theories & Unconfirmed Ideas</a>
+  <header class="atlas-header" id="top">
+    <div class="atlas-masthead">
+      <span class="atlas-art art-mast-left" aria-hidden="true"></span>
+      <div><p class="atlas-name">Biblical World Research Atlas &amp; Encyclopedia</p><p class="atlas-subtitle">Scripture <b>◆</b> History <b>◆</b> Geography <b>◆</b> Genealogies <b>◆</b> Maps <b>◆</b> Research</p></div>
+      <span class="atlas-art art-mast-right" aria-hidden="true"></span>
+    </div>
+    <nav class="atlas-nav" aria-label="Main navigation">
+      <a class="atlas-home-link" href="./" aria-current="page"><span aria-hidden="true">⌂</span> Home</a>
+      <details name="atlas-navigation"><summary><span aria-hidden="true">▣</span>Bibles &amp; Texts</summary><ul><li><a href="./bible-library.html">Bible Versions</a></li><li><a href="./bible-book-index.html">Books &amp; Chapters</a></li><li><a href="./gospels.html">The Four Gospels</a></li><li><a href="./ancient-texts.html">Ancient Writings</a></li></ul></details>
+      <details name="atlas-navigation"><summary><span aria-hidden="true">▤</span>Study Tools</summary><ul><li><a href="./strongs.html#strongs-tool">Concordance</a></li><li><a href="./strongs.html#strongs-tool">Lexicon</a></li><li><a href="./commentaries.html">Bible Commentaries</a></li><li><a href="./prophetic-references.html">Prophets &amp; Gospel References</a></li></ul></details>
+      <details name="atlas-navigation"><summary><span aria-hidden="true">◎</span>Atlas &amp; Geography</summary><ul><li><a href="./biblical-maps.html">Study-Bible Maps</a></li><li><a href="./historical-world-maps.html">Historical World Maps</a></li><li><a href="#maps">Maps &amp; Ancient Places</a></li><li><a href="./antarctica.html">Antarctica Maps &amp; Evidence</a></li><li><a href="./natural-world.html">Natural World</a></li></ul></details>
+      <details name="atlas-navigation"><summary><span aria-hidden="true">▥</span>History &amp; Cultures</summary><ul><li><a href="#research" data-quick-query="genealogy">People &amp; Genealogies</a></li><li><a href="#research" data-quick-query="history">Chronology &amp; Timelines</a></li><li><a href="#research" data-quick-query="archaeology">Places &amp; Archaeology</a></li><li><a href="#research" data-quick-query="kingdom">Civilizations &amp; Kingdoms</a></li></ul></details>
+      <details name="atlas-navigation"><summary><span aria-hidden="true">▧</span>Research Library</summary><ul><li><a href="#research">Research Explorer</a></li><li><a href="./research-source-directory.html">Research Source Directory</a></li><li><a href="#verification">Research Verification &amp; Sources</a></li><li><a href="#theories">Theories &amp; Unconfirmed Ideas</a></li><li><a href="#about">About the Atlas</a></li></ul></details>
+      <details name="atlas-navigation"><summary><span aria-hidden="true">✎</span>My Study Notes</summary><ul><li><a href="#notes">Open My Study Notes</a></li><li><a href="#save-note">Save on this device</a></li><li><a href="#export-notes">Export backup</a></li><li><a href="#import-notes-label">Import backup</a></li></ul></details>
     </nav>
-    <a class="outline-btn desktop-only" href="#about">About the Atlas</a>
   </header>
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-art" aria-hidden="true"><span class="halo"></span><span class="sun"></span><span class="mountain mountain-one"></span><span class="mountain mountain-two"></span><span class="ruins"></span></div>
-      <div class="hero-inner">
-        <div class="hero-emblem" aria-hidden="true"><span class="emblem-globe">◉</span><span class="emblem-book">❧</span></div>
-        <p class="eyebrow">Scripture · History · Geography · Genealogies · Maps · Research</p>
-        <h1 id="hero-title">Biblical World <em>Atlas</em></h1>
-        <p class="hero-subtitle">A Research Atlas & Encyclopedia</p>
-        <p class="intro">Study Scripture, explore biblical places, follow ancient history, and discover traceable references across biblical and historical writings.</p>
-        <div class="search-panel">
-          <label for="site-search">SEARCH THE ATLAS</label>
-          <form id="search-form" role="search">
-            <span class="search-symbol" aria-hidden="true">⌕</span>
-            <input id="site-search" type="search" autocomplete="off" placeholder="Search a place, person, passage, book or topic…" aria-label="Search the atlas research index">
-            <button type="submit">Search Atlas</button>
-          </form>
-          <p>Try: <button type="button" data-search="Enoch">Enoch</button> · <button type="button" data-search="Euphrates">Euphrates</button> · <button type="button" data-search="Jerusalem">Jerusalem</button> · <button type="button" data-search="Jubilees">Jubilees</button></p>
-        </div>
-        <blockquote class="scripture"><p>“Study to show thyself approved unto God, a workman that has nothing to be ashamed of, rightly dividing the word of truth.”</p><cite>2 Timothy 2:15 · Jubilee Bible 2000 (JUB)</cite></blockquote>
-        <div class="verification-mini"><span class="mini-mark">✓</span><span><strong>Evidence-led research</strong> · Linked references · Clear source classifications · Unconfirmed claims labeled</span><a href="#verification">How we verify ↗</a></div>
-        <div class="hero-guide-grid" aria-label="Atlas study categories">
-           <a href="./bible-library.html"><span aria-hidden="true">▤</span><strong>Bible Library</strong><small>KJV · ASV · JPS · NKJV · AMP</small></a>
-           <a href="./ancient-texts.html"><span aria-hidden="true">✦</span><strong>Ancient Writings</strong><small>Enoch · Jasher · Jubilees · Giants</small></a>
-           <a href="./biblical-maps.html"><span aria-hidden="true">⌖</span><strong>Biblical Maps & Atlas</strong><small>Rivers · lands · journeys · kingdoms</small></a>
-           <a href="#research" data-quick-query="genealogy"><span aria-hidden="true">♙</span><strong>People & Genealogies</strong><small>Names · families · lineages</small></a>
-           <a href="#research" data-quick-query="history"><span aria-hidden="true">⌛</span><strong>Chronology & Timelines</strong><small>Patriarchs · kingdoms · eras</small></a>
-           <a href="./strongs.html"><span aria-hidden="true">✧</span><strong>Research Tools</strong><small>Strong’s concordance · Hebrew &amp; Greek lexicon</small></a>
-           <a href="./commentaries.html"><span aria-hidden="true">▣</span><strong>Bible Commentaries</strong><small>Matthew Henry · Prophets · Author studies</small></a>
-           <a href="./gospels.html"><span aria-hidden="true">✝</span><strong>The Four Gospels</strong><small>Matthew · Mark · Luke · John</small></a>
-           <a href="./prophetic-references.html"><span aria-hidden="true">✶</span><strong>Prophets &amp; Gospel References</strong><small>Quotations · context · commentaries</small></a>
-           <a href="#research" data-quick-query="archaeology"><span aria-hidden="true">⚱</span><strong>Places & Archaeology</strong><small>Cities · sites · discoveries</small></a>
-           <a href="#research" data-quick-query="kingdom"><span aria-hidden="true">♜</span><strong>Civilizations & Kingdoms</strong><small>Egypt · Assyria · Babylon · Persia</small></a>
-           <a href="#research" data-quick-query="prophecy"><span aria-hidden="true">✎</span><strong>Topics & Studies</strong><small>Prophecy · covenants · worship</small></a>
-           <a href="#theories"><span aria-hidden="true">?</span><strong>Theories & Unconfirmed</strong><small>Clearly separated hypotheses</small></a>
-        </div>
-      </div>
-    </section>
+    <div class="atlas-front">
+      <section class="atlas-hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Explore the Bible in Its Fullest Context</h1>
+        <p class="atlas-intro">Scripture · Lands · Peoples · Rivers · Mountains · Prophecies · History · Creation</p>
+        <form class="atlas-search" id="search-form" role="search">
+          <span aria-hidden="true">⌕</span>
+          <input id="site-search" type="search" autocomplete="off" placeholder="Search scripture, people, places, events, maps, and research…" aria-label="Search the atlas research index">
+          <button class="atlas-gold" type="submit">Search</button>
+        </form>
+        <p class="atlas-examples">Examples: <button type="button" data-search="Enoch">Enoch</button> · <button type="button" data-search="Euphrates">River Euphrates</button> · <button type="button" data-search="Giants">Giants</button> · <button type="button" data-search="Jashar">Book of Jasher</button> · <a href="./bible-library.html?passage=Genesis%202%3A9">Tree of Life</a> · <a href="./historical-world-maps.html?period=1700">1700 Maps</a></p>
+      </section>
+      <section class="atlas-topics" id="explore" aria-label="Explore the Biblical World">
+        <article class="atlas-topic"><span class="atlas-art art-rivers" aria-hidden="true"></span><div><h3><span aria-hidden="true">≋</span> Rivers</h3><p>Biblical &amp; Modern Rivers, Tributaries, Measurements, Maps &amp; Changes Over Time</p><a class="atlas-gold" href="#research" data-quick-query="river">Explore Rivers →</a></div></article>
+        <article class="atlas-topic"><span class="atlas-art art-maps" aria-hidden="true"></span><div><h3><span aria-hidden="true">◈</span> Maps</h3><p>Biblical, Ancient &amp; World Maps, 1700s Maps, Map Changes, Overlays &amp; Comparisons</p><a class="atlas-gold" href="#maps">Explore Maps →</a></div></article>
+        <article class="atlas-topic"><span class="atlas-art art-prophecies" aria-hidden="true"></span><div><h3><span aria-hidden="true">▧</span> Prophecies</h3><p>Prophetic Scriptures, Timelines, Fulfillments, Nations &amp; Historical Events</p><a class="atlas-gold" href="./prophetic-references.html">Explore Prophecies →</a></div></article>
+        <article class="atlas-topic"><span class="atlas-art art-oceans" aria-hidden="true"></span><div><h3><span aria-hidden="true">≈</span> Oceans</h3><p>Seas, Oceans, Boundaries, Currents, Biblical References &amp; World Changes</p><a class="atlas-gold" href="#research" data-quick-query="sea">Explore Oceans →</a></div></article>
+        <article class="atlas-topic"><span class="atlas-art art-trees" aria-hidden="true"></span><div><h3><span aria-hidden="true">♣</span> Trees</h3><p>Biblical Trees, Ancient Forests, Giant Trees, Wood Uses, Types &amp; Research</p><a class="atlas-gold" href="#research" data-quick-query="tree">Explore Trees →</a></div></article>
+        <article class="atlas-topic"><span class="atlas-art art-giants" aria-hidden="true"></span><div><h3><span aria-hidden="true">♟</span> Giants</h3><p>Biblical Giants, Nephilim, Historical Records, Locations &amp; Verified References</p><a class="atlas-gold" href="#research" data-quick-query="giants">Explore Giants →</a></div></article>
+      </section>
+      <section class="atlas-tools" aria-labelledby="atlas-tools-heading">
+        <h2 id="atlas-tools-heading"><span aria-hidden="true">▤</span> Key Study Tools</h2>
+        <a href="./bible-library.html"><span aria-hidden="true">▣</span><strong>Bible Versions</strong><small>NKJV, KJV, Amplified, Message, Jewish, Ethiopian &amp; More</small></a>
+        <a href="./strongs.html#strongs-tool"><span aria-hidden="true">⌕</span><strong>Concordance</strong><small>Search words, occurrences &amp; scripture references</small></a>
+        <a href="./strongs.html#strongs-tool"><span aria-hidden="true">ℵ</span><strong>Lexicon</strong><small>Hebrew, Greek &amp; Aramaic word studies</small></a>
+        <a href="./ancient-texts.html"><span aria-hidden="true">▤</span><strong>Ancient Books</strong><small>Enoch 1–3, Jasher, Jubilees, Giants &amp; More</small></a>
+        <a href="#research" data-quick-query="genealogy"><span aria-hidden="true">♟</span><strong>Genealogies</strong><small>Bloodlines, family trees &amp; biblical connections</small></a>
+        <a href="#verification"><span aria-hidden="true">▥</span><strong>History &amp; Evidence</strong><small>Archaeology, ancient records, scholars &amp; verified sources</small></a>
+        <a href="#maps"><span aria-hidden="true">◎</span><strong>Geography &amp; Atlas</strong><small>Lands, nations, mountains, territories &amp; overlays</small></a>
+      </section>
+      <div class="atlas-verse"><span aria-hidden="true">▣</span><blockquote class="scripture"><p>“Study to show thyself approved unto God, a workman that has nothing to be ashamed of, rightly dividing the word of truth.”</p><cite>2 Timothy 2:15 · Jubilee Bible 2000 (JUB)</cite></blockquote></div>
+    </div>
 
     <section class="feature-showcase shell" aria-label="Featured Biblical World Atlas research areas">
       <a href="./biblical-maps.html" class="feature-image-card feature-map"><span class="feature-icon" aria-hidden="true">⌖</span><strong>Explore by Map</strong><small>Biblical lands, ancient kingdoms, maps and geographical records</small><span class="feature-link">View maps ↗</span></a>
@@ -75,18 +80,7 @@
       <a href="#research" class="feature-image-card feature-tools"><span class="feature-icon" aria-hidden="true">⌕</span><strong>Research with Sources</strong><small>Passages, lexicons, manuscripts and evidence status</small><span class="feature-link">Browse research ↗</span></a>
       <div class="feature-verse"><span class="verse-label">TODAY IN SCRIPTURE</span><p>“In the beginning God created the heaven and the earth.”</p><strong>Genesis 1:1 (KJV)</strong></div>
     </section>
-    <section class="section shell" id="explore" aria-labelledby="explore-title">
-      <div class="section-heading"><div><p class="kicker">Begin your exploration</p><h2 id="explore-title">Explore the Biblical World</h2></div><p>Choose a subject to find connected passages, geographical references and sources.</p></div>
-      <div class="topic-grid">
-        <button class="topic river" data-search="river"><span class="topic-illustration" aria-hidden="true">〰</span><strong>Rivers</strong><small>Waters & ancient geography</small></button>
-        <button class="topic maps" data-search="maps"><span class="topic-illustration" aria-hidden="true">◈</span><strong>Maps</strong><small>Places, routes & kingdoms</small></button>
-        <button class="topic prophecies" data-search="prophecy"><span class="topic-illustration" aria-hidden="true">✧</span><strong>Prophecies</strong><small>Texts & historical context</small></button>
-        <button class="topic oceans" data-search="sea"><span class="topic-illustration" aria-hidden="true">≈</span><strong>Oceans</strong><small>Seas & coastlines</small></button>
-        <button class="topic trees" data-search="tree"><span class="topic-illustration" aria-hidden="true">♣</span><strong>Trees</strong><small>Plants & scriptural imagery</small></button>
-        <button class="topic giants" data-search="giants"><span class="topic-illustration" aria-hidden="true">♜</span><strong>Giants</strong><small>Nephilim & ancient traditions</small></button>
-      </div>
-      <div class="actions"><a class="gold-btn" href="./natural-world.html">Explore Fruits, Vegetables, Soil, Stones & Minerals ↗</a></div>
-    </section>
+    <div class="shell actions"><a class="gold-btn" href="./natural-world.html">Explore Fruits, Vegetables, Soil, Stones &amp; Minerals ↗</a></div>
 
     <section class="section parchment-band" id="research" aria-labelledby="research-title">
       <div class="shell">
@@ -130,7 +124,7 @@
       <div class="shell split"><div><p class="kicker">Biblical cartography</p><h2>Maps, Landscapes & Ancient Places</h2><p>Traditional study-Bible maps, kingdoms, rivers, cities, historical atlases, archaeology and documented geography — accompanied by citations, dates and confidence levels.</p><div class="actions"><a class="gold-btn" href="./biblical-maps.html">Browse Historic Bible Maps ↗</a><a class="outline-btn" href="./historical-world-maps.html">Historical World Maps: Before 1500–Present ↗</a><a class="outline-btn" href="./research-source-directory.html">Research Source Directory ↗</a><a class="outline-btn" href="https://www.openbible.info/geo/" target="_blank" rel="noopener noreferrer">Bible Geocoding Source ↗</a><a class="outline-btn" href="https://pleiades.stoa.org/" target="_blank" rel="noopener noreferrer">Ancient Places Gazetteer ↗</a><a class="outline-btn" href="./antarctica.html">Antarctica Maps & Evidence ↗</a></div></div><div class="map-display" role="img" aria-label="Decorative old-map style compass illustration, not a geographical map"><div class="compass">✦<span>N</span></div><p>HISTORICAL GEOGRAPHY</p><small>Verified sources · cited locations</small></div></div>
     </section>
 
-    <section class="section shell" id="notes"><div class="section-heading"><div><p class="kicker">Private to this device</p><h2>My Study Notes</h2></div><p>Your notes stay in this browser unless you export a backup. They do not sync automatically.</p></div><label class="note-label" for="study-note">Research notes</label><textarea id="study-note" rows="6" placeholder="Record scripture references, map observations and source citations here…"></textarea><div class="actions"><button class="gold-btn" id="save-note" type="button">Save on this device</button><button class="minor-btn" id="export-notes" type="button">Export backup</button><label class="import-label" for="import-notes">Import backup</label><input type="file" id="import-notes" accept="application/json,.json" hidden></div><p id="note-status" role="status" class="note-status"></p></section>
+    <section class="section shell" id="notes"><div class="section-heading"><div><p class="kicker">Private to this device</p><h2>My Study Notes</h2></div><p>Your notes stay in this browser unless you export a backup. They do not sync automatically.</p></div><label class="note-label" for="study-note">Research notes</label><textarea id="study-note" rows="6" placeholder="Record scripture references, map observations and source citations here…"></textarea><div class="actions"><button class="gold-btn" id="save-note" type="button">Save on this device</button><button class="minor-btn" id="export-notes" type="button">Export backup</button><label class="import-label" id="import-notes-label" for="import-notes">Import backup</label><input type="file" id="import-notes" accept="application/json,.json" hidden></div><p id="note-status" role="status" class="note-status"></p></section>
 
     <section class="section theory-band" id="theories"><div class="shell"><p class="kicker">Clearly separated from established geography</p><h2>Theories & Unconfirmed Ideas</h2><p>This section examines disputed historical identifications, alternative interpretations and unconfirmed geographical claims. Each study distinguishes documented evidence from proposed explanations.</p><p><a class="research-link" href="./theories/antarctica-ice-wall.html">Investigate Antarctica’s alleged ice wall — maps, sources and Bible cross-references ↗</a></p><p class="fineprint">Theoretical content is not presented as verified biblical geography.</p></div></section>
 
