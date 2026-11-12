@@ -13,7 +13,7 @@
 <a class="skip" href="#content">Skip to commentary library</a>
 <header class="research-masthead"><div class="research-wrap navline">
 <a class="home-link" href="./">✦ Biblical World Atlas<small>Research Atlas &amp; Encyclopedia</small></a>
-<nav aria-label="Research pages"><a href="./">Atlas Home</a><a href="./bible-library.html">Bible Library</a><a href="./strongs.html">Strong’s Lexicon</a><a href="./ancient-texts.html">Ancient Writings</a></nav>
+<nav aria-label="Research pages"><a href="./">Atlas Home</a><a href="./bible-library.html">Bible Library</a><a href="./gospels.html">Gospels</a><a href="./strongs.html">Strong’s Lexicon</a><a href="./ancient-texts.html">Ancient Writings</a></nav>
 </div></header>
 <main id="content">
 <section class="research-banner commentary-banner"><div class="research-wrap">
@@ -49,6 +49,19 @@
 <p class="commentary-results-count" id="commentary-count" aria-live="polite">Loading commentary titles…</p>
 <div class="commentary-grid" id="commentary-results"><noscript><p>Enable JavaScript to use filters. <a href="./commentary-links.json">See the source-link catalog.</a> For a complete online reading option, visit <a href="https://mhc.thekingsbible.com/">Matthew Henry's Commentary</a>.</p></noscript></div>
 </section>
+<section id="matthew-henry-reference" aria-labelledby="henry-reference-title">
+<p class="mini-kicker">Complete historical commentary · Chapter-level links for all 66 Protestant Bible books</p><h2 id="henry-reference-title">Read Matthew Henry for Any Bible Passage</h2>
+<p>Enter a Bible reference to open Matthew Henry's actual chapter commentary. For example, <strong>John 3:16</strong> opens his commentary on <strong>John chapter 3</strong>. Scripture and commentary remain separate, and this tool does not copy the book text into GitHub.</p>
+<form class="commentary-controls" id="henry-reference-form">
+<div class="commentary-search"><label for="henry-reference-input">Bible book and chapter (verse optional)</label><input id="henry-reference-input" type="text" value="John 3:16" placeholder="John 3:16, Isaiah 53, Matthew 5…" maxlength="100" required></div>
+<div class="henry-ref-actions"><button type="submit" id="henry-reference-submit">Find Chapter Commentary</button></div>
+</form>
+<p id="henry-reference-status" class="commentary-results-count" role="status" aria-live="polite"></p>
+<div class="henry-ref-links"><a id="henry-reference-commentary" href="https://mhc.thekingsbible.com/MHC/MHC43003.HTM" target="_blank" rel="noopener noreferrer">Read Matthew Henry: John 3 ↗</a><a class="secondary" id="henry-reference-bible" href="https://www.biblegateway.com/passage/?search=John%203&amp;version=KJV" target="_blank" rel="noopener noreferrer">Read Bible passage (KJV) ↗</a></div>
+<div class="henry-ref-shortcuts"><strong>Try a prophet:</strong> <button type="button" data-henry-ref="Isaiah 53">Isaiah 53</button><button type="button" data-henry-ref="Jeremiah 1">Jeremiah 1</button><button type="button" data-henry-ref="Ezekiel 37">Ezekiel 37</button><button type="button" data-henry-ref="Daniel 7">Daniel 7</button><button type="button" data-henry-ref="Micah 5">Micah 5</button><button type="button" data-henry-ref="Zechariah 9">Zechariah 9</button></div>
+<div class="henry-ref-shortcuts"><strong>Try a Gospel:</strong> <button type="button" data-henry-ref="Matthew 5">Matthew 5</button><button type="button" data-henry-ref="Mark 1">Mark 1</button><button type="button" data-henry-ref="Luke 4">Luke 4</button><button type="button" data-henry-ref="John 3:16">John 3</button> <a href="./gospels.html">Explore the Four Gospels ↗</a></div>
+<p class="commentary-copy-note">Matthew Henry's original online commentary is a historical Christian interpretation, not a Bible translation or a substitute for the biblical text. Each linked book is opened at its original site in a separate tab. Return to the Atlas to continue researching.</p>
+</section>
 <section class="free-readings" id="free-alternatives" aria-labelledby="free-title">
 <p class="mini-kicker">Read a complete commentary even when the requested book requires access</p><h2 id="free-title">Additional Free Online Commentary Readers</h2>
 <p>These are <strong>separate commentaries by the authors named below</strong>, not copied or substituted versions of the modern books in your selected list. They let readers continue researching the same biblical books for free.</p>
@@ -70,5 +83,5 @@
 </section>
 </div></main>
 <footer class="research-footer"><div class="research-wrap"><a href="./">← Return to Biblical World Atlas</a><p>Verified Sources · Historical References · Research Evidence &amp; Unresolved Questions</p></div></footer>
-<script defer src="./commentaries.js"></script>
+<script defer src="./matthew-henry.js"></script><script defer src="./commentaries.js"></script>
 </body></html>
