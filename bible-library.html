@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1d30"><meta name="description" content="Find Bible translations and open passages in the edition of your choice.">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./research-pages.css"><link rel="stylesheet" href="./reading-library.css">
+<title>Bible Translation Library | Biblical World Atlas</title></head>
+<body class="research-page reading-library-page">
+<a href="#content" class="skip">Skip to Bible version selector</a>
+<header class="research-masthead"><div class="research-wrap navline"><a class="home-link" href="./">✦ Biblical World Atlas<small>Research Atlas & Encyclopedia</small></a>
+<nav aria-label="Library pages"><a href="./">Home</a><a href="./ancient-texts.html">Ancient Writings</a><a href="./biblical-maps.html">Maps</a><a href="./#verification">Sources & Verification</a></nav></div></header>
+<main id="content">
+<section class="research-banner"><div class="research-wrap"><p class="mini-kicker">Scripture reading · Translation choice · Passage study</p><h1>Bible Translation Library</h1><p>Find a Bible translation, enter a passage and open it in an authorized online reader. Browse historical public-domain editions alongside publisher-provided modern versions.</p>
+<div class="statusline"><span>Translation search</span><span>Passage lookup</span><span>Jewish Bible / Tanakh</span><span>Source-aware reading</span></div></div></section>
+<div class="research-wrap research-content">
+<section aria-labelledby="passage-heading">
+<p class="mini-kicker">Choose a translation</p><h2 id="passage-heading">Read a Bible passage</h2>
+<form id="passage-chooser" class="reading-form">
+<div><label for="version-search">Find a translation by name or abbreviation</label><input id="version-search" type="search" placeholder="KJV, Amplified, Jewish, Jubilee…" autocomplete="off"></div>
+<div><label for="version-select">Select Bible edition</label><select id="version-select"></select></div>
+<div><label for="passage-input">Book, chapter or verse</label><input id="passage-input" type="text" value="2 Timothy 2:15" maxlength="120" placeholder="Genesis 1, Job 38:29-30, John 3:16" required></div>
+<button type="submit" class="reading-submit">Open selected translation ↗</button>
+</form>
+<p id="reader-feedback" class="reader-feedback" role="status" aria-live="polite">Select a translation and passage to begin.</p>
+<p class="source-note">Bible texts open on their original reading websites. Public-domain editions may be integrated for local reading as licensed and verified source text is added. Copyrighted editions are not copied into this site.</p>
+</section>
+<section><p class="mini-kicker">Browse by type</p><h2>Available Bible editions</h2><p class="library-count" id="translation-count" aria-live="polite"></p><div id="translation-list" class="reading-cards"></div></section>
+<section aria-labelledby="connections-heading"><h2 id="connections-heading">Related ancient writings</h2><p>Compare biblical passages with editions of 1 Enoch, 2 Enoch, 3 Enoch, Jubilees, Jasher, Ethiopian canonical writings and other ancient literature. Related passages are identified by type of connection, rather than treated as identical texts.</p>
+<a class="reading-submit inline-submit" href="./ancient-texts.html">Open Ancient Writings Library ↗</a></section>
+</div></main>
+<footer class="research-footer"><div class="research-wrap"><a href="./">← Biblical World Atlas</a><p>Read with context. Compare the source, translation, edition and evidence.</p></div></footer>
+<script defer src="./bible-library.js"></script></body></html>
