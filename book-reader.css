@@ -1,0 +1,11 @@
+#book-reader { scroll-margin-top: 1rem; }
+#book-reader details { padding: 1rem; border: 1px solid #cbb58e; border-radius: .5rem; background: #fff9ed; color: #18283a; }
+#book-reader summary { cursor: pointer; font-weight: bold; }
+.reader-controls, .reader-links { display: flex; flex-wrap: wrap; align-items: end; gap: .65rem 1rem; margin: 1rem 0; }
+.reader-controls > div { max-width: 100%; }
+.reader-controls label { display: block; font-weight: bold; }
+.reader-controls select, .reader-controls button { max-width: 100%; padding: .4rem; font: inherit; }
+.reader-controls [hidden] { display: none; }
+#reading-text { max-width: 72ch; font-family: Georgia, serif; font-size: 1.08rem; line-height: 1.7; }
+#reading-text p { white-space: pre-line; }
+#reading-status { font-size: .95rem; }
