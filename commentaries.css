@@ -43,3 +43,15 @@
 .commentary-empty{background:#fff9ea;border:1px solid #c6a779;border-radius:8px;padding:22px;grid-column:1/-1}
 @media(max-width:1000px){.commentary-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.alternate-readers{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.commentary-grid,.alternate-readers,.access-grid,.commentary-controls{grid-template-columns:1fr}.commentary-controls{padding:13px}.commentary-book{padding:17px}}
+
+#henry-reference-form{grid-template-columns:minmax(0,1fr) auto}
+.henry-ref-actions{display:flex;align-items:end}
+.henry-ref-links{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 20px}
+.henry-ref-links a{display:inline-block;background:#153c58;color:#fff6de!important;border-radius:6px;padding:12px 14px;font-size:13px;font-weight:800;text-decoration:none}
+.henry-ref-links a.secondary{background:#fff7e6;color:#19445c!important;border:1px solid #bda479}
+.henry-ref-shortcuts{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:13px 0}
+.henry-ref-shortcuts strong{font-size:13px}
+.henry-ref-shortcuts button{font-size:12px;background:#f8ead3;border:1px solid #bfa174;color:#244353;padding:8px 10px;border-radius:20px;cursor:pointer}
+.henry-ref-shortcuts button:hover{background:#ecd9b5}
+.henry-ref-shortcuts>a{font-size:13px;font-weight:750;color:#1c4b66}
+@media(max-width:700px){#henry-reference-form{grid-template-columns:1fr}}
