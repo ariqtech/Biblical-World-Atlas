@@ -1,0 +1,45 @@
+.commentary-banner{background:radial-gradient(ellipse at 85% 10%,#bc985f,#385666 47%,#0b1c2e 89%)}
+.return-guide{border:1px solid #c3a474!important;border-left:6px solid #ac7b35!important;background:linear-gradient(110deg,#fcf0d8,#fffaf0)!important;border-radius:9px;padding:20px!important}
+.return-guide h2{margin-top:3px}.return-guide p{line-height:1.6}
+.back-to-atlas,.commentary-back-bottom a{display:inline-block;background:#163c57;color:#fff4da!important;padding:11px 15px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:800}
+.access-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.access-grid>div{border:1px solid #c9a875;background:#fff9ec;border-radius:8px;padding:17px}.access-grid p{font-size:13px;margin:10px 0 0}
+.access-chip{display:inline-block;font-size:12px;font-weight:850;border-radius:100px;padding:6px 11px}
+.access-full{color:#164b3b;background:#d9eddd}
+.access-preview{color:#62451e;background:#f5dfaf}
+.access-required{color:#4f5664;background:#e5e8ed}
+.commentary-copy-note{background:#f5ead5;border-left:4px solid #9b7a47;padding:15px 18px;font-size:14px}
+.commentary-title-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px}
+.commentary-alt-link{font-size:13px;color:#1c4965;font-weight:750}
+.commentary-controls{display:grid;grid-template-columns:2fr 1fr 1.3fr auto;align-items:end;gap:12px;padding:18px;margin:24px 0 12px;background:#fff9ec;border:1px solid #c9ad7f;border-radius:9px}
+.commentary-controls>div{display:flex;flex-direction:column;gap:7px}
+.commentary-controls label{font-size:12px;font-weight:800;line-height:1.3}
+.commentary-controls input,.commentary-controls select{box-sizing:border-box;width:100%;height:49px;border:1px solid #ab916f;border-radius:6px;padding:10px 12px;background:#fff;color:#14364d}
+.commentary-controls button{height:49px;border:1px solid #c4a479;border-radius:6px;padding:10px 14px;font-weight:800;background:#143851;color:#fff4da;cursor:pointer}
+.commentary-controls button:hover{background:#2d5570}
+.commentary-results-count{font-size:13px;color:#675b49;margin:12px 0 18px}
+.commentary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.commentary-book{padding:21px;background:#fffbf3;border-radius:9px;border:1px solid #ccb184;border-top:4px solid #ad8148;box-shadow:0 6px 20px #2a211611}
+.commentary-book h3{font:700 23px/1.23 Georgia,serif;margin:11px 0 4px}
+.commentary-author{color:#3b5262;font-weight:750;margin:8px 0}
+.commentary-series{font-size:13px;color:#554c41;font-style:italic;margin:7px 0}
+.commentary-book-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.commentary-book-top .book-category{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#8b632c}
+.commentary-book .access-chip{font-size:11px}
+.commentary-note{font-size:13px;line-height:1.5;color:#665748;padding:10px 12px;background:#f4e8d1;border-left:3px solid #b38a4d}
+.commentary-links{display:flex;align-items:start;flex-wrap:wrap;gap:8px;margin-top:13px}
+.commentary-links a,.alternate-readers a{padding:10px 12px;text-decoration:none;background:#163951;color:#fff4d8!important;border-radius:6px;font-size:12px;font-weight:800;display:inline-block}
+.commentary-links a.secondary{background:#f6ebd7;color:#1a455f!important;border:1px solid #c3a477}
+.commentary-alt{margin-top:15px;border-top:1px solid #d3bd99;padding-top:12px;font-size:13px}
+.commentary-alt a{font-weight:700;color:#1c4c64}
+.alternate-readers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.alternate-readers article{background:#fff9ea;border:1px solid #ceb387;border-radius:8px;padding:18px}
+.alternate-readers h3{font:700 21px/1.3 Georgia,serif;margin-top:0}
+.alternate-readers p{font-size:13px;line-height:1.55;color:#645847}
+.reader-notes{border-top:1px solid #c6a779}
+.reader-notes p{line-height:1.6}
+.commentary-back-bottom{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
+.commentary-back-bottom a{font-size:12px}
+.commentary-empty{background:#fff9ea;border:1px solid #c6a779;border-radius:8px;padding:22px;grid-column:1/-1}
+@media(max-width:1000px){.commentary-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.alternate-readers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.commentary-grid,.alternate-readers,.access-grid,.commentary-controls{grid-template-columns:1fr}.commentary-controls{padding:13px}.commentary-book{padding:17px}}
