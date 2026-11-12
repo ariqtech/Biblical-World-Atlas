@@ -1,6 +1,21 @@
 "use strict";
 (() => {
  const body = document.body;
+ const nav = document.querySelector(".atlas-nav");
+ if (nav) {
+  nav.addEventListener("click", event => {
+   if (event.target.closest("a")) nav.querySelector("details[open]")?.removeAttribute("open");
+  });
+  document.addEventListener("click", event => {
+   if (!nav.contains(event.target)) nav.querySelector("details[open]")?.removeAttribute("open");
+  });
+  nav.addEventListener("keydown", event => {
+   const openMenu = event.target.closest("details[open]");
+   if (event.key !== "Escape" || !openMenu) return;
+   openMenu.open = false;
+   openMenu.querySelector("summary").focus();
+  });
+ }
  const sizeButton = document.getElementById("text-size-control");
  const contrastButton = document.getElementById("contrast-control");
  const aloudButton = document.getElementById("read-aloud-control");
@@ -57,8 +72,8 @@
     if (speaking) { window.speechSynthesis.cancel(); resetReadAloud(); return; }
     window.speechSynthesis.cancel();
     const title = document.getElementById("hero-title")?.textContent || "Biblical World Atlas";
-    const intro = document.querySelector(".hero .intro")?.textContent || "";
-    const verse = document.querySelector(".hero .scripture")?.textContent || "";
+    const intro = document.querySelector(".atlas-intro")?.textContent || "";
+    const verse = document.querySelector(".atlas-verse .scripture")?.textContent || "";
     const message = new SpeechSynthesisUtterance([title, intro, verse].join(". "));
     message.lang = "en-US";
     message.rate = 0.92;
