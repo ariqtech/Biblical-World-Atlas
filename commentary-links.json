@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "title": "Biblical World Atlas — Bible Commentary Link Catalog",
+  "storesBookText": false,
+  "readerModel": "External source links open in new tab; copyright-protected books never copied into atlas",
+  "books": [
+    {
+      "id": 1,
+      "book": "Whole Bible",
+      "group": "whole",
+      "title": "Matthew Henry’s Complete Commentary on the Whole Bible",
+      "author": "Matthew Henry",
+      "series": "Historical commentary",
+      "access": "full",
+      "links": [
+        {
+          "label": "Read complete commentary",
+          "url": "https://mhc.thekingsbible.com/",
+          "kind": "reading"
+        },
+        {
+          "label": "Alternative full-text reader",
+          "url": "https://www.stepbible.org/version.jsp?version=MHC",
+          "kind": "reading"
+        }
+      ],
+      "alternative": null,
+      "note": "Complete online text from an eighteenth-century commentary. No account required at the original reading site."
+    },
+    {
+      "id": 2,
+      "book": "Isaiah",
+      "group": "major",
+      "title": "Isaiah",
+      "author": "J. Alec Motyer",
+      "series": "Tyndale Old Testament Commentaries (TOTC)",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open book preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3ATOTC23ISUS",
+          "kind": "preview"
+        },
+        {
+          "label": "Access full book (Logos)",
+          "url": "https://www.logos.com/product/48775/isaiah",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Matthew Henry — Isaiah (different author)",
+        "url": "https://mhc.thekingsbible.com/"
+      },
+      "note": "The requested title is Motyer's Tyndale Isaiah, not his separate book The Prophecy of Isaiah. Preview contents may be restricted."
+    },
+    {
+      "id": 3,
+      "book": "Isaiah",
+      "group": "major",
+      "title": "The Book of Isaiah: Chapters 1–39 and 40–66",
+      "author": "John N. Oswalt",
+      "series": "New International Commentary on the Old Testament (NICOT), two volumes",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open volume 1 preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3ANICOT23IS1",
+          "kind": "preview"
+        },
+        {
+          "label": "Volume 1 full-book access",
+          "url": "https://www.logos.com/product/37565/the-book-of-isaiah-chapters-1-39",
+          "kind": "access"
+        },
+        {
+          "label": "Volume 2 full-book access",
+          "url": "https://www.logos.com/product/37566/the-book-of-isaiah-chapters-40-66",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Matthew Henry — Isaiah (different author)",
+        "url": "https://mhc.thekingsbible.com/"
+      },
+      "note": "Both volumes retained. The linked sample is not permission to read the complete copyrighted books."
+    },
+    {
+      "id": 4,
+      "book": "Jeremiah",
+      "group": "major",
+      "title": "The Book of Jeremiah",
+      "author": "J. A. Thompson",
+      "series": "New International Commentary on the Old Testament (NICOT)",
+      "access": "access",
+      "links": [
+        {
+          "label": "Open authorized full-book listing",
+          "url": "https://www.logos.com/product/37567/the-book-of-jeremiah",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Jeremiah commentary — Matthew H. Patton (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/jeremiah/"
+      },
+      "note": "No reliably confirmed complete free reader for this modern volume. The provider may offer limited samples or purchased reading."
+    },
+    {
+      "id": 5,
+      "book": "Jeremiah 1–20",
+      "group": "major",
+      "title": "Jeremiah 1–20",
+      "author": "Jack R. Lundbom",
+      "series": "Anchor Yale Bible, first of three volumes",
+      "access": "access",
+      "links": [
+        {
+          "label": "Open original publisher record",
+          "url": "https://yalebooks.yale.edu/book/9780300139631/jeremiah-1-20/",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Jeremiah commentary — Matthew H. Patton (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/jeremiah/"
+      },
+      "note": "The exact book title and author are preserved; the publisher link is not a free full-text reader."
+    },
+    {
+      "id": 6,
+      "book": "Lamentations",
+      "group": "major",
+      "title": "Lamentations",
+      "author": "Paul R. House",
+      "series": "Word Biblical Commentary, vol. 23B (with Duane A. Garrett’s Song of Songs)",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open book preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3A29.30.2",
+          "kind": "preview"
+        },
+        {
+          "label": "Access full book (Logos)",
+          "url": "https://www.logos.com/product/2389/song-of-songs-lamentations",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Lamentations commentary — Samuel Saldivar (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/lamentations/"
+      },
+      "note": "This commentary is the Lamentations portion of the combined Song of Songs/Lamentations volume."
+    },
+    {
+      "id": 7,
+      "book": "Ezekiel",
+      "group": "major",
+      "title": "The Book of Ezekiel: Chapters 1–24 and 25–48",
+      "author": "Daniel I. Block",
+      "series": "New International Commentary on the Old Testament (NICOT), two volumes",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open volume 1 preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3ANICOT26EZE1",
+          "kind": "preview"
+        },
+        {
+          "label": "Access full volume 1",
+          "url": "https://www.eerdmans.com/9780802825353/the-book-of-ezekiel-chapters-124/",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Ezekiel commentary — Donna Petter (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/ezekiel/"
+      },
+      "note": "Two-volume commentary. Preview and full-text access depend on the provider. A sample does not include both volumes."
+    },
+    {
+      "id": 8,
+      "book": "Daniel",
+      "group": "major",
+      "title": "Daniel",
+      "author": "Tremper Longman III",
+      "series": "NIV Application Commentary",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open book preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3ANIVAC27DA",
+          "kind": "preview"
+        },
+        {
+          "label": "Access full book (Logos)",
+          "url": "https://www.logos.com/product/17852/daniel",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Daniel commentary — Mitch Chase (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/daniel/"
+      },
+      "note": "The complete modern commentary is a licensed book. Provider reading and preview features may vary."
+    },
+    {
+      "id": 9,
+      "book": "Minor Prophets",
+      "group": "minor",
+      "title": "The Minor Prophets: An Exegetical and Expository Commentary",
+      "author": "Thomas Edward McComiskey, editor",
+      "series": "Originally three volumes (also sold as a combined edition)",
+      "access": "preview",
+      "links": [
+        {
+          "label": "See inside / preview at provider",
+          "url": "https://www.logos.com/product/43167/the-minor-prophets-an-exegetical-and-expository-commentary",
+          "kind": "preview"
+        }
+      ],
+      "alternative": {
+        "name": "Free minor prophets commentaries — TGC index (different authors)",
+        "url": "https://www.thegospelcoalition.org/commentary/"
+      },
+      "note": "The provider lists the combined edition and a See inside feature. The full three-volume work is not freely reproduced."
+    },
+    {
+      "id": 10,
+      "book": "Hosea–Jonah",
+      "group": "minor",
+      "title": "Hosea–Jonah",
+      "author": "Douglas Stuart",
+      "series": "Word Biblical Commentary (WBC), vol. 31",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open book preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3A29.33.1",
+          "kind": "preview"
+        },
+        {
+          "label": "Access full WBC volume",
+          "url": "https://www.logos.com/product/1332/hosea-jonah",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Hosea commentary — Eric J. Tully (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/hosea/"
+      },
+      "note": "This is the WBC commentary, not Douglas Stuart’s separate Word Biblical Themes title."
+    },
+    {
+      "id": 11,
+      "book": "Jonah",
+      "group": "minor",
+      "title": "Jonah’s Arguments with God: The Honeymoon Is Over",
+      "author": "T. A. Perry",
+      "series": "Book-length study of Jonah",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open reader preview (if offered)",
+          "url": "https://www.everand.com/book/980866437/Jonah-s-Arguments-with-God-The-Honeymoon-is-Over",
+          "kind": "preview"
+        }
+      ],
+      "alternative": {
+        "name": "Free Jonah commentary — Jay Sklar (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/jonah/"
+      },
+      "note": "Everand may require an account or subscription for complete reading; its access and copying rules may differ."
+    },
+    {
+      "id": 12,
+      "book": "Micah",
+      "group": "minor",
+      "title": "A Commentary on Micah",
+      "author": "Bruce K. Waltke",
+      "series": "Scholarly monograph",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open book preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3ACOMMONMICAH",
+          "kind": "preview"
+        },
+        {
+          "label": "Read Waltke’s free Micah commentary article (different work)",
+          "url": "https://www.thegospelcoalition.org/commentary/micah/",
+          "kind": "reading"
+        }
+      ],
+      "alternative": {
+        "name": "Matthew Henry — Micah (different author)",
+        "url": "https://mhc.thekingsbible.com/"
+      },
+      "note": "Waltke's freely readable TGC commentary is a separate work, not the full text of his book A Commentary on Micah."
+    },
+    {
+      "id": 13,
+      "book": "Obadiah",
+      "group": "minor",
+      "title": "Obadiah: A Discourse Analysis of the Hebrew Bible",
+      "author": "Daniel I. Block",
+      "series": "Zondervan Exegetical Commentary on the Old Testament",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open verified publisher-authorized sample",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?historybuttons=false&layout=minimal&navigationbox=false&resourceName=LLS%3AHEARMSGSCR31OB&sharebutton=false",
+          "kind": "preview"
+        },
+        {
+          "label": "Access full book from publisher",
+          "url": "https://zondervanacademic.com/products/obadiah",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Obadiah commentary — Irv Busenitz (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/obadiah/"
+      },
+      "note": "The preview is an authorized sample; this modern book is not open access."
+    },
+    {
+      "id": 14,
+      "book": "Nahum · Habakkuk · Zephaniah",
+      "group": "minor",
+      "title": "The Books of Nahum, Habakkuk and Zephaniah",
+      "author": "O. Palmer Robertson",
+      "series": "New International Commentary on the Old Testament (NICOT)",
+      "access": "preview",
+      "links": [
+        {
+          "label": "Open book preview (if offered)",
+          "url": "https://biblia.com/api/plugins/embeddedpreview?resourceName=LLS%3ANICOT34NA",
+          "kind": "preview"
+        },
+        {
+          "label": "Access complete book",
+          "url": "https://www.logos.com/product/37572/the-books-of-nahum-habakkuk-and-zephaniah",
+          "kind": "access"
+        }
+      ],
+      "alternative": {
+        "name": "Free Nahum commentary — Michael P. V. Barrett (different author)",
+        "url": "https://www.thegospelcoalition.org/commentary/nahum/"
+      },
+      "note": "Separate free readings also available for Habakkuk and Zephaniah in the alternatives section below."
+    }
+  ]
+}
