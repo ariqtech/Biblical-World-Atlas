@@ -37,3 +37,8 @@
 @media(max-width:1050px){.book-tile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.chapter-grid{grid-template-columns:repeat(8,minmax(0,1fr))}}
 @media(max-width:750px){.book-index-controls{grid-template-columns:1fr 1fr}.book-index-controls>div:first-child{grid-column:1/-1}.book-tile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
 @media(max-width:480px){.book-index-controls{grid-template-columns:1fr}.book-index-controls>div:first-child{grid-column:auto}.book-group{padding:12px}.book-tile{padding:10px 7px;font-size:12px}.book-tile small{font-size:9px}.chapter-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.chapter-reader{padding:15px}}
+
+.chapter-version-field{display:flex;flex-direction:column;gap:6px;margin-top:14px;max-width:340px}
+.chapter-version-field label{font-size:13px;font-weight:800;color:#173d56}
+.chapter-version-field select{width:100%;min-height:46px;border:1px solid #b79b72;border-radius:6px;padding:9px 10px;background:#fffef9;color:#153b56;font-size:14px}
+.chapter-version-field p{font-size:12px;line-height:1.45;color:#645342;margin:0}
