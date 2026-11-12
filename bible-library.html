@@ -8,7 +8,7 @@
 <body class="research-page reading-library-page">
 <a href="#content" class="skip">Skip to Bible version selector</a>
 <header class="research-masthead"><div class="research-wrap navline"><a class="home-link" href="./">✦ Biblical World Atlas<small>Research Atlas & Encyclopedia</small></a>
-<nav aria-label="Library pages"><a href="./">Home</a><a href="./ancient-texts.html">Ancient Writings</a><a href="./biblical-maps.html">Maps</a><a href="./#verification">Sources & Verification</a></nav></div></header>
+<nav aria-label="Library pages"><a href="./">Home</a><a href="./ancient-texts.html">Ancient Writings</a><a href="./gospels.html">Gospels</a><a href="./biblical-maps.html">Maps</a><a href="./#verification">Sources & Verification</a></nav></div></header>
 <main id="content">
 <section class="research-banner"><div class="research-wrap"><p class="mini-kicker">Scripture reading · Translation choice · Passage study</p><h1>Bible Translation Library</h1><p>Find a Bible translation, enter a passage and open it in an authorized online reader. Browse historical public-domain editions alongside publisher-provided modern versions.</p>
 <div class="statusline"><span>Translation search</span><span>Passage lookup</span><span>Jewish Bible / Tanakh</span><span>Source-aware reading</span></div></div></section>
@@ -21,6 +21,7 @@
 <div><label for="passage-input">Book, chapter or verse</label><input id="passage-input" type="text" value="2 Timothy 2:15" maxlength="120" placeholder="Genesis 1, Job 38:29-30, John 3:16" required></div>
 <button type="submit" class="reading-submit">Open selected translation ↗</button>
 </form>
+<div class="source-note" id="henry-lookup" aria-live="polite"><strong>Matthew Henry Commentary for this passage:</strong> <span id="henry-passage-message">Enter a Bible book and chapter to see its historical commentary.</span> <a id="henry-passage-link" href="https://mhc.thekingsbible.com/" target="_blank" rel="noopener noreferrer" hidden>Read corresponding chapter ↗</a><br><small>Opens Matthew Henry's original reading page in a new tab. Commentary is interpretation, not Scripture. Return here to continue.</small></div>
 <p id="reader-feedback" class="reader-feedback" role="status" aria-live="polite">Select a translation and passage to begin.</p>
 <p class="source-note">Bible texts open on their original reading websites. Public-domain editions may be integrated for local reading as licensed and verified source text is added. Copyrighted editions are not copied into this site.</p>
 </section>
@@ -31,4 +32,4 @@
 <a class="reading-submit inline-submit" href="./ancient-texts.html">Open Ancient Writings Library ↗</a></section>
 </div></main>
 <footer class="research-footer"><div class="research-wrap"><a href="./">← Biblical World Atlas</a><p>Verified Sources · Historical References · Research Evidence &amp; Unresolved Questions</p></div></footer>
-<script defer src="./bible-library.js"></script></body></html>
+<script defer src="./matthew-henry.js"></script><script defer src="./bible-library.js"></script></body></html>
