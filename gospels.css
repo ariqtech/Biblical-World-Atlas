@@ -1,0 +1,27 @@
+.gospel-banner{background:radial-gradient(ellipse at 75% 5%,#b29160,#315060 46%,#0c1e31 92%)}
+.gospel-guide{background:linear-gradient(115deg,#f7e9d0,#fffaf1)!important;border:1px solid #c2a47a!important;border-left:5px solid #a78049!important;padding:20px!important;border-radius:8px}
+.gospel-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap}.gospel-heading>a{font-size:13px;font-weight:750;color:#234b61}
+.gospel-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.gospel-card{display:flex;flex-direction:column;gap:10px;padding:19px;background:#fffbf3;border:1px solid #cdb285;border-top:4px solid #ab8349;border-radius:8px}
+.gospel-category{font-size:11px;font-weight:850;color:#86602c;text-transform:uppercase;letter-spacing:.09em}
+.gospel-card h3{font:700 26px Georgia,serif;margin:2px 0}.gospel-card p{font-size:13px;color:#5b5045;flex:1;line-height:1.55;margin:0}
+.gospel-card>a{color:#26526b;font-size:13px;font-weight:750}
+.gospel-card button{font-size:12px;font-weight:850;color:#fff5e0;background:#163c56;border:0;border-radius:6px;padding:11px 9px;cursor:pointer}
+.gospel-card button:hover{background:#365a72}
+.gospel-chapter-picker{display:grid;grid-template-columns:1fr 1fr 2.2fr;gap:15px;align-items:end;background:#f6ecd9;border:1px solid #c3a577;border-radius:9px;padding:18px;margin-top:20px}
+.gospel-chapter-picker>div:not(.gospel-picker-actions){display:flex;flex-direction:column;gap:8px}.gospel-chapter-picker label{font-size:12px;font-weight:800}
+.gospel-chapter-picker select{height:46px;padding:9px 12px;border:1px solid #b49a71;background:white;color:#15344d;border-radius:5px;width:100%}
+.gospel-picker-actions{display:flex;gap:9px;flex-wrap:wrap}
+.gospel-picker-actions a{color:#fff9e6!important;background:#163c56;font-size:12px;font-weight:850;padding:12px;border-radius:5px;text-decoration:none}
+.gospel-picker-actions a.gospel-secondary-link{background:#fff8e7;color:#183e55!important;border:1px solid #b79a71}
+.gospel-status{font-size:13px;color:#62543b;margin:12px 0}
+.gospel-connections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.gospel-connection{background:#fffaf0;border:1px solid #c9ab7c;border-radius:8px;padding:18px}
+.gospel-connection h3{font:700 20px Georgia,serif;margin:7px 0 10px}
+.gospel-connection p{font-size:13px;line-height:1.55;color:#5c5042}
+.gospel-linkrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:10px}
+.gospel-linkrow a{display:inline-block;background:#153954;color:#fff5df!important;border-radius:5px;padding:9px 11px;text-decoration:none;font-size:12px;font-weight:750}
+.gospel-linkrow a.secondary{background:#f4e8d1;border:1px solid #bda078;color:#1c445d!important}
+.gospel-end-note{border-top:1px solid #bea375}
+@media(max-width:1080px){.gospel-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.gospel-chapter-picker{grid-template-columns:1fr 1fr}.gospel-picker-actions{grid-column:1/-1}}
+@media(max-width:650px){.gospel-cards,.gospel-connections,.gospel-chapter-picker{grid-template-columns:1fr}.gospel-picker-actions{grid-column:auto}.gospel-card h3{font-size:23px}}
