@@ -1,0 +1,23 @@
+.nature-banner{background:radial-gradient(ellipse at 80% 10%,#867a55,#274b49 42%,#0a1b30 86%)}
+.nature-controls{display:grid;grid-template-columns:2fr 1.3fr 1.3fr auto;gap:12px;align-items:end;margin:20px 0;background:#fff9ed;padding:19px;border:1px solid #c6a471;border-radius:9px}
+.nature-controls>div{display:flex;flex-direction:column;gap:7px}
+.nature-controls label{font-size:12px;font-weight:800}
+.nature-controls input,.nature-controls select{width:100%;min-height:46px;padding:10px;border-radius:5px;border:1px solid #aa916f;background:#fff;color:#182e42}
+.nature-controls button{min-height:46px;border-radius:5px;background:#173650;color:#fff2d5;border:1px solid #bc9452;padding:9px 14px;font-weight:800}
+.nature-controls button:hover{background:#2e5878}
+.nature-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.nature-source-link{display:inline-block;font-size:13px;padding:8px 12px;border:1px solid #bb945a;border-radius:5px;background:#fff5df;text-decoration:none;font-weight:800}
+.nature-counter{color:#6d5a3c;font-size:13px;margin:12px 0 19px}
+.nature-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.nature-card{background:#fffcf5;border:1px solid #d1b285;border-top:4px solid #a88756;border-radius:7px;padding:20px;box-shadow:0 8px 18px #40280714}
+.nature-card h3{font-size:23px;margin:9px 0}.nature-card p{font-size:13px;line-height:1.55}
+.nature-card .nature-category{font-size:11px;color:#72512a;text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+.nature-card .nature-citation{border-top:1px solid #e7d6b9;padding-top:10px;margin-top:16px;font-size:12px;font-weight:700}
+.nature-card .nature-status{display:inline-block;font-size:11px;padding:5px 9px;background:#e9efe9;border:1px solid #bed0bf;color:#244c36;border-radius:4px;font-weight:800}
+.nature-card .nature-status.uncertain{background:#fbecdb;border-color:#dac3a1;color:#79512d}
+.nature-card a{display:inline-block;padding:9px 11px;background:#16334d;border-radius:5px;color:#fff3d7;text-decoration:none;font-size:12px;font-weight:800;margin:10px 7px 0 0}
+.nature-card a.nature-extra{background:#efe5d4;border:1px solid #bb9b6b;color:#193850}
+.nature-card a:hover{text-decoration:underline}
+.nature-introduction{border-left:5px solid #b9915a;padding-left:17px!important}
+@media(max-width:1000px){.nature-controls{grid-template-columns:1fr 1fr}.nature-results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.nature-controls{grid-template-columns:1fr}.nature-results{grid-template-columns:1fr}}
